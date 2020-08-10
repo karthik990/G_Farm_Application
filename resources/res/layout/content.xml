@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar_layout"/>
+    <RelativeLayout android:id="@+id/content_overlay" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/content_layout" android:scrollbars="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ScrollView android:id="@+id/scroll_text" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/content_img" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true"/>
+                    <TextView android:textSize="?attr/font_14" android:typeface="sans" android:textColor="#040404" android:autoLink="all" android:linksClickable="true" android:id="@+id/content_text" android:paddingTop="5dp" android:visibility="invisible" android:scrollbars="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:minLines="1" android:singleLine="false" android:layout_below="@+id/content_img" android:layout_centerVertical="true" android:paddingStart="8dp" android:paddingEnd="8dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+                </RelativeLayout>
+            </ScrollView>
+            <LinearLayout android:orientation="vertical" android:id="@+id/content_list_layout" android:paddingTop="5dp" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/scroll_text" android:paddingStart="5dp" android:paddingEnd="5dp">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/content_list" android:visibility="invisible" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

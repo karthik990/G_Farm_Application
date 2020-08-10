@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/main_layout" android:layout_width="match_parent" android:layout_height="@dimen/rss_square_featured_item_height">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/rss_list_image" android:layout_width="match_parent" android:layout_height="@dimen/rss_square_featured_item_height" android:src="@drawable/no_image" android:scaleType="fitXY"/>
+        <RelativeLayout android:orientation="vertical" android:background="@drawable/rss_image_gradient" android:paddingBottom="11.3dp" android:layout_width="match_parent" android:layout_height="@dimen/rss_square_featured_item_gradient_height" android:layout_alignParentBottom="true" android:paddingStart="13.3dp" android:paddingEnd="13.3dp">
+            <TextView android:textSize="?attr/font_16" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/rss_list_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_above="@+id/rss_list_date" app:layout_widthPercent="50%"/>
+            <TextView android:textSize="?attr/font_93" android:textColor="@color/white" android:id="@+id/rss_list_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/rss_arrow_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/list_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/rss_list_description" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/form_main_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/form_layout_overlay" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.mobiroller.views.CustomHorizontalScrollView android:id="@+id/form_scroll_text" android:background="#f7f5f8" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/form_layout" android:scrollbars="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/form_img" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/form_img">
+                    <TextView android:textSize="?attr/font_14" android:autoLink="all" android:linksClickable="true" android:id="@+id/form_text" android:background="#f7f5f8" android:paddingTop="8dp" android:paddingBottom="8dp" android:visibility="gone" android:scrollbars="horizontal" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/form_list" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </com.mobiroller.views.CustomHorizontalScrollView>
+    </RelativeLayout>
+</RelativeLayout>

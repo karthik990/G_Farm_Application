@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/top_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/overlay_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/main_content" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@+id/appbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="400dp" app:layout_scrollFlags="3">
+                    <ImageView android:id="@+id/image" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:layout_collapseMode="2"/>
+                    <com.mobiroller.views.custom.MobirollerToolbar android:id="@+id/toolbar" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize" app:contentInsetEnd="0dp" app:contentInsetLeft="0dp" app:contentInsetRight="0dp" app:contentInsetStart="0dp" app:contentInsetStartWithNavigation="0dp" app:layout_collapseMode="1" app:mToolbarIsTransparent="true" app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+                        <include android:id="@+id/toolbar_header_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/user_profile_widget_header_view_top"/>
+                    </com.mobiroller.views.custom.MobirollerToolbar>
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <include android:id="@+id/float_header_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/scrollView" app:layout_behavior="com.mobiroller.views.WhatsappHeaderBehavior" layout="@layout/user_profile_widget_header_view"/>
+            <androidx.core.widget.NestedScrollView android:id="@+id/scrollView" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <include layout="@layout/user_profile_content_main"/>
+            </androidx.core.widget.NestedScrollView>
+            <jahirfiquitiva.libs.fabsmenu.FABsMenuLayout android:layout_width="match_parent" android:layout_height="match_parent" app:fabs_menu_clickableOverlay="true" app:fabs_menu_overlayColor="#4d000000">
+                <jahirfiquitiva.libs.fabsmenu.FABsMenu android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/fab" android:visibility="gone" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fab_expandDirection="0" app:fab_labelsPosition="0" app:fab_menuMargins="16dp" app:fab_moreButtonPlusIcon="@drawable/ic_add_white_36dp" app:fab_moreButtonRippleColor="@color/white" app:fab_moreButtonSize="0">
+                    <jahirfiquitiva.libs.fabsmenu.TitleFAB android:id="@+id/fab_role" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fabSize="1" app:fab_title="@string/role_list" app:fab_title_backgroundColor="@color/white" app:rippleColor="@color/white" app:srcCompat="@drawable/ic_supervisor_account_white_24dp"/>
+                    <jahirfiquitiva.libs.fabsmenu.TitleFAB android:id="@+id/fab_block" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fabSize="1" app:fab_enableTitleClick="true" app:fab_title="@string/action_block" app:fab_title_backgroundColor="@color/white" app:rippleColor="@color/white" app:srcCompat="@drawable/ic_block_white_24dp"/>
+                </jahirfiquitiva.libs.fabsmenu.FABsMenu>
+            </jahirfiquitiva.libs.fabsmenu.FABsMenuLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </RelativeLayout>
+</RelativeLayout>

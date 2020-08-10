@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="16dp" android:paddingEnd="16dp">
+    <TextView android:textSize="?attr/font_133" android:id="@+id/form_item_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <Switch android:textSize="?attr/font_147" android:id="@+id/form_item_check_box" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentEnd="true"/>
+    <View android:background="#202020" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="2dp" android:layout_below="@+id/form_item_check_box"/>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/favorite_main_layout" android:background="#f2f1ef" android:padding="3dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/favorite_overlay_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/favorite_recycler_view" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/empty_view" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/favorite_empty_image" android:layout_width="125dp" android:layout_height="158.7dp" android:layout_marginTop="84.7dp" android:layout_centerHorizontal="true" app:srcCompat="@drawable/ic_book_white_48dp"/>
+            <TextView android:textSize="?attr/font_187" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@+id/favorite_empty_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:text="@string/favorite_not_found" android:layout_below="@+id/favorite_empty_image" android:fontFamily="sans-serif-condensed"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

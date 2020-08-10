@@ -1,0 +1,37 @@
+package org.apache.http.impl.p103io;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.HttpResponseFactory;
+import org.apache.http.config.MessageConstraints;
+import org.apache.http.impl.DefaultHttpResponseFactory;
+import org.apache.http.message.BasicLineParser;
+import org.apache.http.message.LineParser;
+import org.apache.http.p104io.HttpMessageParser;
+import org.apache.http.p104io.HttpMessageParserFactory;
+import org.apache.http.p104io.SessionInputBuffer;
+
+/* renamed from: org.apache.http.impl.io.DefaultHttpResponseParserFactory */
+public class DefaultHttpResponseParserFactory implements HttpMessageParserFactory<HttpResponse> {
+    public static final DefaultHttpResponseParserFactory INSTANCE = new DefaultHttpResponseParserFactory();
+    private final LineParser lineParser;
+    private final HttpResponseFactory responseFactory;
+
+    public DefaultHttpResponseParserFactory(LineParser lineParser2, HttpResponseFactory httpResponseFactory) {
+        if (lineParser2 == null) {
+            lineParser2 = BasicLineParser.INSTANCE;
+        }
+        this.lineParser = lineParser2;
+        if (httpResponseFactory == null) {
+            httpResponseFactory = DefaultHttpResponseFactory.INSTANCE;
+        }
+        this.responseFactory = httpResponseFactory;
+    }
+
+    public DefaultHttpResponseParserFactory() {
+        this(null, null);
+    }
+
+    public HttpMessageParser<HttpResponse> create(SessionInputBuffer sessionInputBuffer, MessageConstraints messageConstraints) {
+        return new DefaultHttpResponseParser(sessionInputBuffer, this.lineParser, this.responseFactory, messageConstraints);
+    }
+}

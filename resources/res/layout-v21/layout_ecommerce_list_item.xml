@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="7.5dp">
+    <androidx.cardview.widget.CardView android:id="@+id/product_image_layout" android:layout_width="match_parent" android:layout_height="0dp" app:cardCornerRadius="6dp" app:cardElevation="0dp" app:layout_constraintDimensionRatio="165:135" app:layout_constraintTop_toTopOf="0">
+        <ImageView android:id="@+id/product_image" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/no_image" android:scaleType="fitCenter"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0">
+                <com.mobiroller.views.custom.MobirollerBadgeView android:id="@+id/sold_out_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:backgroundColor="#f8e7d8" app:text="@string/e_commerce_list_sold_out_badge" app:textColor="#000000"/>
+                <com.mobiroller.views.custom.MobirollerBadgeView android:id="@+id/free_shipping_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" app:backgroundColor="#000000" app:text="@string/e_commerce_list_free_shipping_badge" app:textColor="#ffffff"/>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <com.mobiroller.views.custom.MobirollerTextView android:ellipsize="end" android:id="@+id/product_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:maxLines="2" android:lineSpacingExtra="2sp" android:paddingEnd="8dp" app:colorType="9" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/product_image_layout" app:sizeType="5"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/product_title">
+        <androidx.cardview.widget.CardView android:id="@+id/sale_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginEnd="5dp" app:cardBackgroundColor="#f5d8d8" app:cardCornerRadius="6dp">
+            <com.mobiroller.views.custom.MobirollerTextView android:textColor="#ff0000" android:gravity="center" android:id="@+id/sale_rate_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:layout_marginBottom="9dp" android:includeFontPadding="false" android:maxLength="3" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:letterSpacing="0.08" app:sizeType="3"/>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.mobiroller.views.custom.MobirollerTextView android:id="@+id/product_price_campaign" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:includeFontPadding="false" android:letterSpacing="-0.02" app:colorType="4" app:sizeType="5"/>
+            <com.mobiroller.views.custom.MobirollerTextView android:id="@+id/product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" app:colorType="7" app:sizeType="3"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

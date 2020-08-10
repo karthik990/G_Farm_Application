@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/main_layout" android:layout_width="match_parent" android:layout_height="266.6953dp">
+    <com.google.android.gms.ads.formats.NativeAppInstallAdView android:id="@+id/app_install_ad_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:background="@color/gray" android:layout_width="match_parent" android:layout_height="266.6953dp">
+            <ImageView android:id="@+id/ivLogo" android:background="@color/white" android:layout_width="match_parent" android:layout_height="200dp"/>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/list_native_ad_title_background" android:layout_width="match_parent" android:layout_height="66.7dp" android:layout_below="@+id/ivLogo">
+                <ImageView android:id="@+id/ivImage" android:padding="3dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="2"/>
+                <RelativeLayout android:orientation="vertical" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.1" android:paddingStart="13.3dp" android:paddingEnd="13.3dp">
+                    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+                    <TextView android:textSize="9.3sp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/tvDescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_below="@+id/tvHeader"/>
+                </RelativeLayout>
+                <Button android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/btnAction" android:layout_width="match_parent" android:layout_height="35dp" android:maxLines="1" android:layout_weight="2" android:layout_marginEnd="5dp"/>
+            </LinearLayout>
+            <TextView android:id="@+id/rss_list_description" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <include android:id="@+id/ad_attribution" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginTop="2dp" layout="@layout/ad_attribution"/>
+    </com.google.android.gms.ads.formats.NativeAppInstallAdView>
+    <RelativeLayout android:gravity="center" android:id="@+id/empty_image_view" android:background="#e5e3e5" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:background="@drawable/ad_placeholder_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="@color/white" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ad" android:layout_marginStart="3dp" android:layout_marginEnd="3dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

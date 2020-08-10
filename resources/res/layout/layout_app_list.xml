@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/app_list" android:background="#f2f1ef" android:padding="6.7dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/empty_view" android:background="#f2f1ef" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/app_empty_image" android:layout_width="174.7dp" android:layout_height="142.7dp" android:layout_marginTop="82dp" android:src="@drawable/preview_empty_view" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="?attr/font_187" android:textStyle="bold" android:textColor="#8600f0" android:gravity="center" android:id="@+id/empty_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="38.7dp" android:text="@string/app_not_found" android:layout_below="@+id/app_empty_image" android:fontFamily="sans-serif-condensed"/>
+        <TextView android:textSize="?attr/font_133" android:textColor="@color/black" android:gravity="center" android:id="@+id/note_empty_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13.3dp" android:text="@string/preview_empty_note" android:layout_below="@+id/empty_text" android:fontFamily="sans-serif-condensed" android:paddingStart="25dp" android:paddingEnd="25dp"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="180dp">
+    <com.google.android.gms.ads.formats.NativeContentAdView android:id="@+id/content_ad_view" android:layout_width="match_parent" android:layout_height="180dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/main_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="180dp">
+            <ImageView android:id="@+id/ivImage" android:layout_width="match_parent" android:layout_height="130dp" android:scaleType="centerCrop"/>
+            <RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="50dp">
+                <TextView android:textSize="11.3sp" android:textStyle="bold" android:textColor="#000000" android:ellipsize="end" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/tvHeader" android:background="@color/white" android:paddingTop="5.3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="9.3dp" android:paddingEnd="9.3dp"/>
+                <TextView android:textSize="9.3sp" android:textColor="#a9a9a9" android:ellipsize="end" android:gravity="center" android:id="@+id/tvDescription" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_below="@+id/tvHeader" android:paddingStart="15dp" android:paddingEnd="15dp"/>
+                <Button android:ellipsize="end" android:id="@+id/btnAction" android:background="#ccc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginBottom="3dp" android:maxLines="1" android:layout_alignParentBottom="true" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <include android:id="@+id/ad_attribution" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginTop="2dp" layout="@layout/ad_attribution"/>
+        <ImageView android:id="@+id/ivLogo" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </com.google.android.gms.ads.formats.NativeContentAdView>
+    <RelativeLayout android:gravity="center" android:id="@+id/empty_image_view" android:background="#e5e3e5" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:background="@drawable/ad_placeholder_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="@color/white" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ad" android:layout_marginStart="3dp" android:layout_marginEnd="3dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

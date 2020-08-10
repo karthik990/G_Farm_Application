@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar_layout"/>
+    <ScrollView android:background="#f2f1ef" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="#f2f1ef" android:padding="11.3dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <EditText android:textSize="?attr/font_173" android:textColor="#4e5f6f" android:textColorHint="#4e5f6f" android:id="@+id/note_title" android:background="@drawable/edit_text_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/title" android:maxLines="1" android:fontFamily="sans-serif-light"/>
+            <EditText android:textSize="?attr/font_173" android:textColor="#4e5f6f" android:textColorHint="#4e5f6f" android:gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/note_description" android:background="@drawable/edit_text_bg_selector" android:layout_width="match_parent" android:layout_height="150dp" android:hint="@string/note_description" android:fontFamily="sans-serif-light"/>
+            <TextView android:textSize="?attr/font_173" android:textColor="#4e5f6f" android:id="@+id/color_textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/color" android:fontFamily="sans-serif-light" android:paddingStart="5dp"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/note_colors" android:layout_width="match_parent" android:layout_height="50dp"/>
+            <TextView android:textSize="?attr/font_173" android:textColor="#4e5f6f" android:id="@+id/images_textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="@string/images" android:fontFamily="sans-serif-light" android:paddingStart="5dp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="201.2dp">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/note_images" android:paddingTop="6dp" android:layout_width="match_parent" android:layout_height="201.2dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

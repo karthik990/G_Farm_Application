@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/list_menu_overlay" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/list_menu_layout" android:scrollbars="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.mobiroller.views.custom.MobirollerToolbar android:id="@+id/toolbar_top" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:minHeight="?attr/actionBarSize" app:contentInsetLeft="0dp" app:contentInsetStart="0dp" app:contentInsetStartWithNavigation="0dp" app:mToolbarIsTransparent="true">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+                <TextView android:textAppearance="?attr/actionMenuTextAppearance" android:textSize="?attr/font_19" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center" android:id="@+id/toolbar_title" android:focusable="false" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="?attr/actionBarSize" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever"/>
+            </RelativeLayout>
+        </com.mobiroller.views.custom.MobirollerToolbar>
+        <ImageView android:id="@+id/list_menu_img" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/toolbar_top"/>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@+id/menu_list_layout" android:paddingBottom="5dp" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/list_menu_img" android:layout_marginStart="5dp" android:layout_marginEnd="5dp">
+            <FrameLayout android:id="@+id/fl_adplaceholder" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/menu_list" android:visibility="invisible" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@drawable/list_selector" android:drawSelectorOnTop="false" android:scrollingCache="true" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="0dp" android:smoothScrollbar="true" android:layout_marginStart="1dp" android:layout_marginEnd="1dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.firebase.p037ui.auth.util.p039ui.SupportVectorDrawablesButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:text="@string/fui_sign_in_with_github" style="@style/FirebaseUI.Button.AccountChooser.GitHubButton"/>

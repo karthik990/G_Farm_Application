@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="fui_error_weak_password">
+        <item quantity="one">પાસવર્ડ પૂરતો સશક્ત નથી. ઓછામાં ઓછા %1$d અક્ષર અને વર્ણ તથા સંખ્યાઓના સંયોજનનો ઉપયોગ કરો</item>
+        <item quantity="other">પાસવર્ડ પૂરતો સશક્ત નથી. ઓછામાં ઓછા %1$d અક્ષર અને વર્ણ તથા સંખ્યાઓના સંયોજનનો ઉપયોગ કરો</item>
+    </plurals>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1h</item>
+        <item quantity="other">%dh</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1m</item>
+        <item quantity="other">%dm</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1s</item>
+        <item quantity="other">%ds</item>
+    </plurals>
+</resources>

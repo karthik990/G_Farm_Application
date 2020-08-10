@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="6" android:versionName="3.12.0.6" android:installLocation="auto" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="com.mobiroller.mobi942763453128" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="29"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-feature android:glEsVersion="20000" android:required="true"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <permission android:name=".permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <application android:label="@string/app_name" android:icon="@drawable/icon" android:name="com.mobiroller.MobiRollerApplication" android:allowBackup="true" android:hardwareAccelerated="true" android:supportsRtl="true" android:usesCleartextTraffic="true" android:resizeableActivity="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <activity android:theme="@style/SplashTheme" android:label="@string/app_name" android:name="com.mobiroller.activities.SplashApp" android:launchMode="singleTop" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.mobiroller.jcplayer.JcPlayerNotificationReceiver" android:enabled="true" android:exported="false"/>
+        <service android:name="com.mobiroller.jcplayer.JcPlayerService" android:stopWithTask="true"/>
+        <meta-data android:name="android.max_aspect" android:value="2.1"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:theme="@style/AppCompatMenu" android:name="com.mobiroller.activities.menu.MainActivity" android:launchMode="singleTop" android:screenOrientation="sensorPortrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.GDDialogCompat" android:name="com.mobiroller.activities.menu.aveNavigationActivity" android:launchMode="singleTop" android:screenOrientation="sensorPortrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/AppCompatMenu" android:name="com.mobiroller.activities.AuthorizationActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/AppCompatMenu" android:name="com.mobiroller.activities.GenericActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/AppCompatMenu" android:name="com.mobiroller.activities.aveWebView" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/TransitionAppCompat" android:name="com.mobiroller.activities.aveRSSView" android:screenOrientation="userPortrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/AppCompatMenu" android:name="com.mobiroller.activities.aveRssContentViewPager" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/AppCompatMenu" android:name="com.mobiroller.activities.VideoActivity"/>
+        <activity android:theme="@style/DragDismissTheme" android:name="com.mobiroller.activities.ImagePagerActivity"/>
+        <activity android:theme="@style/AppCompatMenu" android:name="com.mobiroller.activities.AveAddNoteActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.google.android.gms.ads.AdActivity" android:exported="false" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <activity android:theme="@style/AppCompatMenu" android:name="com.mobiroller.activities.aveCallNowView" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.Transparent" android:name="com.mobiroller.activities.aveShareView" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/AppCompatMenu" android:name="com.mobiroller.activities.aveFullScreenVideo" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/AppCompatMenu" android:name="com.mobiroller.activities.menu.SlidingMenu" android:screenOrientation="sensorPortrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/AppCompatMenu" android:name="com.mobiroller.activities.menu.ListMenu" android:launchMode="singleTop" android:screenOrientation="sensorPortrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/MaterialComponentsNoActionBarNoStatusBar" android:name="com.mobiroller.activities.ConnectionRequired" android:screenOrientation="sensorPortrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden" android:noHistory="true"/>
+        <activity android:theme="@style/MaterialComponentsNoActionBarNoStatusBar" android:name="com.mobiroller.activities.PermissionRequiredActivity" android:screenOrientation="sensorPortrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/MaterialComponentsNoActionBarNoStatusBar" android:name="com.mobiroller.activities.user.UserLoginActivity" android:screenOrientation="sensorPortrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"/>
+        <activity android:theme="@style/MaterialComponentsNoActionBarNoStatusBar" android:name="com.mobiroller.activities.user.UserRegisterActivity" android:screenOrientation="sensorPortrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"/>
+        <activity android:theme="@style/MaterialComponentsNoActionBarNoStatusBar" android:name="com.mobiroller.activities.user.UserResetPasswordActivity" android:screenOrientation="sensorPortrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize|adjustPan|adjustNothing"/>
+        <activity android:theme="@style/MaterialComponentsNoActionBarNoStatusBar" android:name="com.mobiroller.activities.user.UserUpdateActivity" android:screenOrientation="sensorPortrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/MaterialComponentsNoActionBarNoStatusBar" android:name="com.mobiroller.activities.user.UserChangePasswordActivity" android:screenOrientation="sensorPortrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/MaterialComponentsNoActionBarNoStatusBar" android:name="com.mobiroller.services.FCMNotificationHandler" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden" android:noHistory="true"/>
+        <activity android:theme="@style/AppCompatMenu" android:name="com.mobiroller.activities.aveChatView" android:launchMode="singleTop" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/AppCompatMenu" android:name="com.mobiroller.activities.chat.ChatUserListActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/AppCompatMenu" android:name="com.mobiroller.activities.chat.ChatArchivedDialogActivity" android:launchMode="singleTop" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/ChatTheme" android:name="com.mobiroller.activities.chat.ChatActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/MaterialComponentsNoActionBarNoStatusBar" android:name="com.mobiroller.activities.chat.CreateGroupChat" android:launchMode="singleTop" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/MaterialComponentsNoActionBarNoStatusBar" android:name="com.mobiroller.activities.chat.GroupChatActivity" android:launchMode="singleTop" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/MaterialComponentsNoActionBarNoStatusBar" android:name="com.mobiroller.activities.chat.ChatNotificationHandlerActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/MaterialComponentsNoActionBarNoStatusBar" android:name="com.mobiroller.activities.user.UserProfileActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/MaterialComponentsNoActionBarNoStatusBar" android:name="com.mobiroller.activities.chat.ChatAdminActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/MaterialComponentsNoActionBarNoStatusBar" android:name="com.mobiroller.activities.chat.ChatAdminUserListActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/MaterialComponentsNoActionBarNoStatusBar" android:name="com.mobiroller.activities.chat.ChatBlockedUserListActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/MaterialComponentsNoActionBarNoStatusBar" android:name="com.mobiroller.activities.chat.ChatAdminReportActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/MaterialComponentsNoActionBarNoStatusBar" android:name="com.mobiroller.activities.chat.ChatAdminLogActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/MaterialComponentsNoActionBarNoStatusBar" android:name="com.mobiroller.activities.chat.ChatUserSearchResultActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/MaterialComponentsNoActionBarNoStatusBar" android:name="com.mobiroller.activities.preview.NotSupportedActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/Base.Theme.AppCompat" android:name="com.theartofdev.edmodo.cropper.CropImageActivity"/>
+        <activity android:theme="@style/AppCompatMenu" android:name="com.mobiroller.activities.aveYoutubeAdvancedView" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/AppCompatMenuFix" android:name="com.mobiroller.activities.youtubeadvanced.YoutubeDetailActivity"/>
+        <activity android:theme="@style/AppCompatMenu" android:name="com.mobiroller.activities.youtubeadvanced.PlaylistDetailActivity"/>
+        <activity android:theme="@style/AppCompatMenu" android:name="com.mobiroller.activities.youtubeadvanced.ChannelDetailActivity"/>
+        <activity android:name="com.mobiroller.services.RestoreAppActivity"/>
+        <activity android:theme="@style/AppCompatTransparentFix" android:name="com.mobiroller.activities.user.GoogleSignInActivity"/>
+        <activity android:theme="@style/AppCompatTransparentFix" android:name="com.mobiroller.activities.user.FirebaseSignInActivity"/>
+        <activity android:theme="@style/AppCompatTransparent" android:name="com.mobiroller.activities.preview.StoragePermissionActivity"/>
+        <activity android:theme="@style/AppCompatTransparent" android:name="com.mobiroller.activities.preview.LocationPermissionActivity"/>
+        <activity android:theme="@style/AppCompatTransparentFix" android:name="com.mobiroller.activities.ActivityHandler" android:noHistory="true"/>
+        <activity android:theme="@style/InAppPurchaseAppCompatTransparent" android:name="com.mobiroller.activities.inapppurchase.InAppPurchaseDetailActivity" android:screenOrientation="sensorPortrait"/>
+        <activity android:theme="@style/InAppPurchaseAppCompatTransparent" android:name="com.mobiroller.activities.inapppurchase.InAppPurchaseActivity" android:screenOrientation="sensorPortrait"/>
+        <activity android:theme="@style/AppCompatMenuFix" android:name="com.mobiroller.activities.menu.SlidingPanelActivity" android:screenOrientation="sensorPortrait" android:configChanges="locale"/>
+        <activity android:theme="@style/Theme" android:name="com.startapp.android.publish.ads.list3d.List3DActivity"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.startapp.android.publish.adsCommon.activities.OverlayActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme" android:name="com.startapp.android.publish.adsCommon.activities.FullScreenActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/AppCompatTransparent" android:name="com.mobiroller.activities.preview.PreviewNotificationHandler"/>
+        <activity android:theme="@style/DayNightNoTopBars" android:name="com.mobiroller.activities.ecommerce.ProductDetailActivity"/>
+        <activity android:theme="@style/MaterialComponentsNoActionBarNoStatusBar" android:name="com.mobiroller.activities.user.UserAddressActivity" android:screenOrientation="sensorPortrait"/>
+        <activity android:theme="@style/MaterialComponentsNoActionBarNoStatusBar" android:name="com.mobiroller.activities.ecommerce.OrderDetailsActivity" android:screenOrientation="sensorPortrait"/>
+        <activity android:theme="@style/MaterialComponentsNoActionBarNoStatusBar" android:name="com.mobiroller.activities.user.UserOrderActivity" android:screenOrientation="sensorPortrait"/>
+        <activity android:theme="@style/MaterialComponentsNoActionBarNoStatusBar" android:name="com.mobiroller.activities.ecommerce.Online3DSecureGateway" android:screenOrientation="sensorPortrait"/>
+        <activity android:theme="@style/MaterialComponentsNoActionBarNoStatusBar" android:name="com.mobiroller.activities.ecommerce.OrderFlowActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"/>
+        <activity android:theme="@style/NoActionBarNoStatusBar" android:name="com.mobiroller.activities.ecommerce.ProductSearchActivity" android:screenOrientation="sensorPortrait"/>
+        <activity android:theme="@style/NoActionBarNoStatusBar" android:name="com.mobiroller.activities.ecommerce.ShoppingCartActivity" android:screenOrientation="sensorPortrait"/>
+        <activity android:theme="@style/NoActionBarNoStatusBar" android:name="com.mobiroller.activities.MobiRollerBadgeActivity" android:screenOrientation="sensorPortrait"/>
+        <activity android:theme="@style/NoActionBarNoStatusBar" android:name="com.mobiroller.activities.ecommerce.ProductDescriptionActivity" android:screenOrientation="sensorPortrait"/>
+        <activity android:theme="@style/PayPal" android:name="com.mobiroller.activities.ecommerce.PayPalActivity"/>
+        <activity android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="com.mobiroller.mobi942763453128.braintree"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.startapp.android.publish.common.metaData.PeriodicMetaDataService"/>
+        <service android:name="com.startapp.android.publish.common.metaData.InfoEventService"/>
+        <service android:name="com.startapp.android.publish.common.metaData.PeriodicJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:name="com.startapp.android.publish.common.metaData.BootCompleteListener">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.mobiroller.services.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.mobiroller"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="io.fabric.ApiKey" android:value="cc1d6ed0005edaf9bfa822a788bf54345f48f8fa"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCXRp5rkm2ZX_saC0aCGYZXSiNHrOHZ5O4"/>
+        <service android:name="com.applyze.ApplyzeAnalyticsService"/>
+        <receiver android:name="com.applyze.ApplyzeNetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.mobiroller.services.FCMMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.mobiroller.services.FCMInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.mobiroller.services.ClosingService" android:stopWithTask="false"/>
+        <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="com.mobiroller.mobi942763453128" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="false"/>
+        <meta-data android:name="com.shakebugs.APIClientID" android:value="k3TLB2ZXIfZAo6agBhQebv95mMUwlLgcVzk6rwjn"/>
+        <meta-data android:name="com.shakebugs.APIClientSecret" android:value="JMaAvOWDzUTsE5bRsqvvLehZSid0eu74Sm2NNbyoriuXcxxAytYD7nX"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_application_id"/>
+        <activity android:theme="@style/FirebaseUI.Transparent" android:label="" android:name="com.firebase.p037ui.auth.KickoffActivity" android:exported="false"/>
+        <activity android:theme="@style/FirebaseUI.Transparent" android:label="" android:name="com.firebase.p037ui.auth.p038ui.idp.SingleSignInActivity" android:exported="false"/>
+        <activity android:theme="@style/FirebaseUI.Transparent" android:label="" android:name="com.firebase.p037ui.auth.p038ui.credentials.CredentialSaveActivity" android:exported="false"/>
+        <activity android:label="@string/fui_title_recover_password_activity" android:name="com.firebase.p037ui.auth.p038ui.email.RecoverPasswordActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/fui_sign_in_default" android:name="com.firebase.p037ui.auth.p038ui.email.EmailActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/fui_sign_in_with_phone_number" android:name="com.firebase.p037ui.auth.p038ui.phone.PhoneActivity" android:exported="false" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateVisible|stateAlwaysVisible|adjustResize"/>
+        <activity android:label="@string/fui_title_welcome_back_idp_prompt" android:name="com.firebase.p037ui.auth.p038ui.idp.WelcomeBackIdpPrompt" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/fui_title_welcome_back_password_prompt" android:name="com.firebase.p037ui.auth.p038ui.email.WelcomeBackPasswordPrompt" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/fui_title_welcome_back_password_prompt" android:name="com.firebase.p037ui.auth.p038ui.email.WelcomeBackEmailLinkPrompt" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/FirebaseUI.Transparent" android:label="" android:name="com.firebase.p037ui.auth.p038ui.email.EmailLinkCatcherActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/fui_sign_in_default" android:name="com.firebase.p037ui.auth.p038ui.email.EmailLinkErrorRecoveryActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/fui_default_toolbar_title" android:name="com.firebase.p037ui.auth.p038ui.idp.AuthMethodPickerActivity" android:exported="false"/>
+        <activity android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:name="com.facebook.CustomTabActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/facebook_login_protocol_scheme"/>
+            </intent-filter>
+        </activity>
+        <provider android:name="com.firebase.p037ui.auth.data.client.AuthUiInitProvider" android:exported="false" android:authorities="com.mobiroller.mobi942763453128.authuiinitprovider" android:initOrder="90"/>
+        <activity android:theme="@style/MediaTheme" android:name="com.twitter.sdk.android.tweetui.PlayerActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/MediaTheme" android:name="com.twitter.sdk.android.tweetui.GalleryActivity"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.analytics.AnalyticsService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:exported="false" android:excludeFromRecents="true"/>
+        <service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true"/>
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.firebase.auth.internal.FederatedSignInActivity" android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN" android:exported="true" android:excludeFromRecents="true" android:launchMode="singleTask"/>
+        <provider android:name="androidx.work.impl.WorkManagerInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.mobiroller.mobi942763453128.workmanager-init" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.background.systemalarm.SystemAlarmService" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" android:enabled="true" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.twitter.sdk.android.core.identity.OAuthActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="orientation|screenSize"/>
+        <provider android:name="com.crashlytics.android.CrashlyticsInitProvider" android:exported="false" android:authorities="com.mobiroller.mobi942763453128.crashlyticsinitprovider" android:initOrder="90"/>
+        <provider android:name="com.flurry.android.agent.FlurryContentProvider" android:exported="false" android:authorities="com.mobiroller.mobi942763453128.FlurryContentProvider"/>
+        <activity android:theme="@style/bt_transparent_activity" android:name="com.braintreepayments.api.AndroidPayActivity"/>
+        <activity android:theme="@style/bt_transparent_activity" android:name="com.braintreepayments.api.GooglePaymentActivity"/>
+        <activity android:name="com.braintreepayments.api.threedsecure.ThreeDSecureWebViewActivity"/>
+        <service android:name="com.braintreepayments.api.internal.AnalyticsIntentService"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.firebase.iid.FirebaseInstanceIdService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="2.0.1"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.android.billingclient.api.ProxyBillingActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <provider android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer" android:exported="false" android:multiprocess="true" android:authorities="com.mobiroller.mobi942763453128.lifecycle-process"/>
+    </application>
+</manifest>

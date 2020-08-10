@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/layout_custom_body_shape" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-38dp" android:layout_below="@+id/dialog_header_layout">
+        <com.mobiroller.views.custom.MobirollerTextView android:gravity="center" android:id="@+id/title_text_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="58dp" android:text="Update your order!" android:paddingStart="25dp" android:paddingEnd="25dp" app:colorType="7" app:sizeType="0"/>
+        <com.mobiroller.views.custom.MobirollerTextView android:gravity="center" android:id="@+id/description_text_view" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:maxHeight="250dp" android:text="You can’t order on your cart. Some products changed, updated or not selling anymore." android:layout_below="@+id/title_text_view" android:paddingStart="45dp" android:paddingEnd="45dp" app:colorType="4" app:sizeType="5"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:clipChildren="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_marginBottom="30dp" android:layout_below="@+id/description_text_view" android:paddingStart="25dp" android:paddingEnd="25dp">
+            <com.mobiroller.views.custom.MobirollerButton android:gravity="center" android:id="@+id/negative_button" android:layout_width="200dp" android:layout_height="44dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" app:mButtonBackgroundColor="@color/white" app:mButtonHasRadius="true" app:mButtonText="@string/e_commerce_dialog_negative_button" app:mButtonTextColor="#878787"/>
+            <com.mobiroller.views.custom.MobirollerButton android:gravity="center" android:id="@+id/button" android:layout_width="200dp" android:layout_height="44dp" android:layout_marginTop="5dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" app:mButtonBackgroundColor="#f4f6f6" app:mButtonHasRadius="true" app:mButtonText="@string/notification_dialog_positive_button" app:mButtonTextColor="#000000"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/dialog_header_layout" android:layout_width="76dp" android:layout_height="76dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <RelativeLayout android:id="@+id/dialog_header" android:background="@drawable/layout_custom_header_shape" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:gravity="center" android:id="@+id/icon_layout" android:background="@drawable/layout_custom_header_shape" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:gravity="center" android:id="@+id/icon_image_view" android:layout_width="30dp" android:layout_height="30dp" android:tint="@color/black" app:srcCompat="@drawable/ic_edit_white_24dp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

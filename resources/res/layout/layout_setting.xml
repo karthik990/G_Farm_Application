@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/main_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/overlay_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/setting_linear_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/language_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:paddingStart="16dp" android:paddingEnd="16dp">
+                <TextView android:textAppearance="@style/TextAppearance.Holo" android:textSize="?attr/font_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/change_language" android:layout_weight="1"/>
+                <RelativeLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="?attr/font_15" android:textStyle="bold" android:gravity="end" android:id="@+id/language_textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="0.3dp"/>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/text_size_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:paddingStart="16dp" android:paddingEnd="16dp">
+                <TextView android:textAppearance="@style/TextAppearance.Holo" android:textSize="?attr/font_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/change_font_size" android:layout_weight="1"/>
+                <RelativeLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="?attr/font_15" android:textStyle="bold" android:gravity="end" android:id="@+id/text_size_textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="0.3dp"/>
+            <Switch android:textSize="?attr/font_16" android:id="@+id/notification_switch" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/app_notifications" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+            <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="0.3dp"/>
+            <Switch android:textSize="?attr/font_16" android:id="@+id/notification_sound_switch" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/notification_sound" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+            <View android:id="@+id/user_agreement_view_layout" android:background="@color/black" android:layout_width="match_parent" android:layout_height="0.3dp"/>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/user_agreement_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:paddingStart="16dp" android:paddingEnd="16dp">
+                <TextView android:textAppearance="@style/TextAppearance.Holo" android:textSize="?attr/font_16" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/user_agreement_settings" android:layout_weight="1"/>
+            </LinearLayout>
+            <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="0.3dp"/>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/app_version_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:paddingStart="16dp" android:paddingEnd="16dp">
+                <TextView android:textAppearance="@style/TextAppearance.Holo" android:textSize="?attr/font_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/app_version" android:layout_weight="1"/>
+                <RelativeLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="?attr/font_15" android:textStyle="bold" android:gravity="end" android:id="@+id/app_version_textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="0.3dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

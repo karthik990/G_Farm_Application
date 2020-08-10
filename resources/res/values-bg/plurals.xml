@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="fui_error_weak_password">
+        <item quantity="one">Паролата не е достатъчно надеждна. Използвайте поне %1$d знак и комбинация от букви и цифри</item>
+        <item quantity="other">Паролата не е достатъчно надеждна. Използвайте поне %1$d знака и комбинация от букви и цифри</item>
+    </plurals>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1 ч</item>
+        <item quantity="other">%d ч</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1 мин</item>
+        <item quantity="other">%d мин</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1 сек</item>
+        <item quantity="other">%d сек</item>
+    </plurals>
+</resources>

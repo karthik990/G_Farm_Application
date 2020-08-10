@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="fui_error_weak_password">
+        <item quantity="one">پاس ورڈ کافی مضبوط نہیں ہے۔ کم از کم %1$d کریکٹر اور حروف و اعداد کا مرکب استعمال کریں</item>
+        <item quantity="other">پاس ورڈ کافی مضبوط نہیں ہے۔ کم از کم %1$d کریکٹرز اور حروف و اعداد کا مرکب استعمال کریں</item>
+    </plurals>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1 گھنٹہ</item>
+        <item quantity="other">%d گھنٹے</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1منٹ</item>
+        <item quantity="other">%dمنٹ</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">پہلا</item>
+        <item quantity="other">%dسیکنڈ</item>
+    </plurals>
+</resources>

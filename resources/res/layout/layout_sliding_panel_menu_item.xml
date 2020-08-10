@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="70dp" android:layout_height="70dp" android:layout_margin="25dp">
+    <com.mobiroller.views.CircleImageView android:id="@+id/image" android:layout_width="70dp" android:layout_height="70dp" android:src="@drawable/transparent"/>
+    <ImageView android:id="@+id/icon" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerInParent="true"/>
+</RelativeLayout>

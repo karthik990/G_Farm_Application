@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p101me.zhanghai.android.materialprogressbar.MaterialProgressBar android:id="@+id/top_progress_bar" style="@style/FirebaseUI.TopProgressBar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_height="wrap_content" style="@style/FirebaseUI.WrapperStyle">
+            <com.firebase.p037ui.auth.p038ui.phone.CountryListSpinner android:id="@+id/country_list" app:layout_constraintBaseline_toBaselineOf="@+id/phone_layout" app:layout_constraintStart_toStartOf="0" style="@style/FirebaseUI.CountrySpinner"/>
+            <com.firebase.p037ui.auth.util.p039ui.BaselineTextInputLayout android:id="@+id/phone_layout" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/country_list" app:layout_constraintTop_toTopOf="0" style="@style/FirebaseUI.TextInputLayout.PhoneField">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/phone_number" android:imeOptions="actionDone" style="@style/FirebaseUI.TextInputEditText.PhoneField"/>
+            </com.firebase.p037ui.auth.util.p039ui.BaselineTextInputLayout>
+            <Button android:id="@+id/send_code" android:layout_marginTop="@dimen/fui_field_padding_vert" android:text="@string/fui_verify_phone_number" app:layout_constraintTop_toBottomOf="@+id/phone_layout" style="@style/FirebaseUI.VerifyPhoneButton"/>
+            <TextView android:textColor="?android:attr/textColorTertiary" android:id="@+id/send_sms_tos" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fui_field_padding_vert" android:textIsSelectable="false" app:layout_constraintTop_toBottomOf="@+id/send_code" style="@style/FirebaseUI.Text.BodyText"/>
+            <TextView android:id="@+id/email_footer_tos_and_pp_text" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/send_sms_tos" style="@style/FirebaseUI.PrivacyFooter"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

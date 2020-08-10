@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/header_logo" android:layout_width="97.8dp" android:layout_height="97.8dp" android:layout_marginTop="59.4dp" android:src="@drawable/login_logo_v_2" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="?attr/font_16" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/header_text_welcome" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.3dp" android:text="@string/welcome_preview_header" android:layout_below="@+id/header_logo"/>
+    <TextView android:textSize="?attr/font_16" android:textColor="@color/white" android:gravity="center" android:id="@+id/header_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/welcome_preview_header" android:layout_below="@+id/header_text_welcome"/>
+    <View android:background="#bdbdbd" android:layout_width="match_parent" android:layout_height="1.3dp" android:layout_marginTop="30.7dp" android:layout_below="@+id/header_text"/>
+</RelativeLayout>

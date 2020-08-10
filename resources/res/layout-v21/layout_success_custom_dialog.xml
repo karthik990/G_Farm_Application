@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="362dp">
+    <RelativeLayout android:background="@drawable/layout_custom_body_shape" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-62dp" android:layout_below="@+id/dialog_header_layout">
+        <TextView android:textSize="?attr/font_133" android:textColor="@color/black" android:gravity="center" android:id="@+id/message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="80dp" android:paddingStart="15dp" android:paddingEnd="15dp"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_marginBottom="15dp" android:layout_below="@+id/message" android:paddingStart="25dp" android:paddingEnd="25dp">
+            <Button android:textSize="?attr/font_14" android:textColor="@color/white" android:gravity="center" android:id="@+id/layout_custom_close_button" android:background="@color/snackbar_success" android:layout_width="120dp" android:layout_height="37.3dp" android:text="@string/OK" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/dialog_header_layout" android:layout_width="match_parent" android:layout_height="130dp" android:layout_alignParentTop="true">
+        <RelativeLayout android:gravity="center" android:id="@+id/dialog_header" android:background="@drawable/layout_custom_success_header_shape" android:layout_width="96dp" android:layout_height="96dp" android:elevation="3dp">
+            <ImageView android:id="@+id/layout_custom_header_image" android:layout_width="89.3dp" android:layout_height="match_parent" android:layout_marginTop="14.7dp" android:layout_marginBottom="26dp" android:src="@drawable/ic_done_white_48dp" android:layout_marginStart="17.3dp" android:layout_marginEnd="17.3dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

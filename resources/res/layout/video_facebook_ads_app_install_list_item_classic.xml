@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="3.4dp" android:paddingBottom="3.3dp" android:layout_width="match_parent" android:layout_height="@dimen/youtube_type_one_image_height" android:paddingStart="3.3dp" android:paddingEnd="3.3dp">
+    <androidx.percentlayout.widget.PercentRelativeLayout android:orientation="horizontal" android:id="@+id/main_layout" android:layout_width="match_parent" android:layout_height="@dimen/youtube_type_ads_main_height">
+        <ImageView android:id="@+id/ivImage" android:background="@color/white" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_height="match_parent" app:layout_widthPercent="40%"/>
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_height="match_parent" android:paddingStart="12.7dp" android:paddingEnd="10.7dp" android:layout_toEndOf="@+id/ivImage" app:layout_widthPercent="60%">
+            <TextView android:textSize="13.3sp" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvHeader" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+            <TextView android:textSize="9.3sp" android:textColor="#a9a9a9" android:ellipsize="end" android:id="@+id/tvDescription" android:background="@color/white" android:paddingTop="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="3"/>
+            <Button android:textSize="10sp" android:textColor="#0d0909" android:ellipsize="end" android:id="@+id/btnAction" android:background="@drawable/ad_action_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:maxHeight="@dimen/youtube_type_ads_main_square_title_height" android:maxLines="1"/>
+        </LinearLayout>
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ad_choices_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginStart="2dp"/>
+    <ImageView android:id="@+id/ivLogo" android:background="@color/white" android:visibility="gone" android:layout_width="0dp" android:layout_height="0dp"/>
+    <RelativeLayout android:gravity="center" android:id="@+id/empty_image_view" android:background="#e5e3e5" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:background="@drawable/ad_placeholder_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="@color/white" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ad" android:layout_marginStart="3dp" android:layout_marginEnd="3dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

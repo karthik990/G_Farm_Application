@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.formats.NativeContentAdView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="300dp" android:paddingStart="10dp" android:paddingEnd="10dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp">
+        <RelativeLayout android:background="#ececec" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="?attr/font_24" android:textStyle="bold" android:textColor="#0000ff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tvHeader" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:paddingStart="15dp" android:paddingEnd="15dp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="8dp" android:layout_below="@+id/tvHeader">
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.35">
+                    <ImageView android:layout_gravity="center" android:id="@+id/ivLogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:adjustViewBounds="true" android:maxHeight="100dp"/>
+                    <Button android:textSize="16sp" android:textStyle="bold" android:textColor="#0000ff" android:layout_gravity="center_horizontal" android:id="@+id/btnAction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+                </LinearLayout>
+                <RelativeLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5">
+                    <TextView android:textSize="16sp" android:gravity="center" android:id="@+id/tvDescription" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <ImageView android:id="@+id/ivImage" android:background="#ececec" android:layout_width="match_parent" android:layout_height="100dp" android:layout_below="@+id/tvDescription"/>
+                    <LinearLayout android:gravity="bottom" android:layout_gravity="end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_below="@+id/ivImage">
+                        <TextView android:textSize="14sp" android:textStyle="bold" android:gravity="bottom" android:id="@+id/tvAdvertiser" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</com.google.android.gms.ads.formats.NativeContentAdView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="fui_error_weak_password">
+        <item quantity="one">Hindi masyadong malakas ang password. Gumamit ng %1$d character man lang at kumbinasyon ng mga titik at mga numero</item>
+        <item quantity="other">Hindi masyadong malakas ang password. Gumamit ng %1$d na character man lang at kumbinasyon ng mga titik at mga numero</item>
+    </plurals>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1h</item>
+        <item quantity="other">%dh</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1m</item>
+        <item quantity="other">%dm</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1s</item>
+        <item quantity="other">%ds</item>
+    </plurals>
+</resources>

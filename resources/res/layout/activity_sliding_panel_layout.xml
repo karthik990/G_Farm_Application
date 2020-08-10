@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="top" android:layout_gravity="start" android:id="@+id/list_slidermenu" android:layout_width="match_parent" android:layout_height="match_parent" app:itemIconTint="@color/white" app:itemTextAppearance="@style/PreviewNavigationDrawerStyle" app:itemTextColor="@color/white" app:umanoDragView="@+id/gridview_layout" app:umanoOverlay="true" app:umanoPanelHeight="0dp" app:umanoParallaxOffset="0dp" app:umanoShadowHeight="4dp">
+    <RelativeLayout android:id="@+id/drawer_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar_layout" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+                <com.mobiroller.views.custom.MobirollerToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:navigationIcon="@drawable/hamberger_icon" app:theme="@style/ToolBarStyle"/>
+            </com.google.android.material.appbar.AppBarLayout>
+            <FrameLayout android:id="@+id/frame_container" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+            <RelativeLayout android:id="@+id/adsView" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/gridview_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/user_header" android:visibility="gone" layout="@layout/layout_sliding_panel_user_menu"/>
+        <androidx.viewpager.widget.ViewPager android:id="@+id/sliding_panel_view_pager" android:layout_width="match_parent" android:layout_height="300dp" android:layout_marginTop="20dp"/>
+        <RelativeLayout android:gravity="center" android:id="@+id/user_grid_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="300dp" android:layout_marginTop="20dp">
+            <GridView android:gravity="center" android:layout_gravity="center" android:id="@+id/user_grid" android:layout_width="match_parent" android:layout_height="wrap_content" android:verticalSpacing="30dp" android:stretchMode="spacingWidthUniform" android:numColumns="3" android:layout_centerInParent="true" android:paddingStart="-30dp" android:paddingEnd="-30dp"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/viewPagerIndicator" android:layout_width="match_parent" android:layout_height="@dimen/rss_slider_indicator_height" android:layout_below="@+id/sliding_panel_view_pager">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/viewPagerCountDots" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:rotation="90" app:srcCompat="@drawable/ic_arrow_back_white_24dp"/>
+    </RelativeLayout>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

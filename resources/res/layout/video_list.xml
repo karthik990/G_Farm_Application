@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/main_layout" android:background="#f2f1ef" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/overlay_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.mobiroller.views.custom.MobirollerSwipeRefreshLayout android:id="@+id/swipeRefreshLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/video_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="false" android:scrollingCache="true" android:cacheColorHint="@android:color/transparent" android:dividerHeight="0px" android:smoothScrollbar="true"/>
+        </com.mobiroller.views.custom.MobirollerSwipeRefreshLayout>
+        <com.github.ybq.android.spinkit.SpinKitView android:id="@+id/load_more_progress_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:SpinKit_Color="@color/dark_red" app:SpinKit_Style="4"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="fui_error_weak_password">
+        <item quantity="one">Uw wachtwoord is niet sterk genoeg. Gebruik ten minste %1$d teken en een combinatie van letters en cijfers.</item>
+        <item quantity="other">Uw wachtwoord is niet sterk genoeg. Gebruik ten minste %1$d tekens en een combinatie van letters en cijfers.</item>
+    </plurals>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1u</item>
+        <item quantity="other">%du</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1m</item>
+        <item quantity="other">%dm</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1s</item>
+        <item quantity="other">%ds</item>
+    </plurals>
+</resources>

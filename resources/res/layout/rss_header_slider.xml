@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/linearLayout" android:paddingTop="6.7dp" android:layout_width="match_parent" android:layout_height="@dimen/rss_slider_height" android:paddingStart="6.6dp" android:paddingEnd="6.6dp">
+    <com.mobiroller.containers.ClickableViewPager android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="@dimen/rss_header_height"/>
+    <RelativeLayout android:gravity="center" android:id="@+id/viewPagerIndicator" android:layout_width="match_parent" android:layout_height="@dimen/rss_slider_indicator_height" android:layout_marginTop="@dimen/rss_slider_indicator_top_margin_height" android:layout_marginBottom="10dp">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/viewPagerCountDots" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

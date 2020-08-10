@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="fui_error_weak_password">
+        <item quantity="one">Ο κωδικός πρόσβασης δεν είναι αρκετά ισχυρός. Χρησιμοποιήστε τουλάχιστον %1$d χαρακτήρα και έναν συνδυασμό γραμμάτων και αριθμών</item>
+        <item quantity="other">Ο κωδικός πρόσβασης δεν είναι αρκετά ισχυρός. Χρησιμοποιήστε τουλάχιστον %1$d χαρακτήρες και έναν συνδυασμό γραμμάτων και αριθμών</item>
+    </plurals>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1ω</item>
+        <item quantity="other">%dω</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1λ</item>
+        <item quantity="other">%dλ</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1δ</item>
+        <item quantity="other">%dδ</item>
+    </plurals>
+</resources>

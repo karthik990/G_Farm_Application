@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/note_image_main_layout" android:paddingTop="1.65dp" android:paddingBottom="1.65dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="0.65dp" android:paddingEnd="0.65dp">
+    <com.mobiroller.views.SquareImageView android:id="@+id/note_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_marginStart="2dp" android:transitionName="galleryImage"/>
+    <ImageView android:id="@+id/note_image_remove" android:background="#85404040" android:padding="5dp" android:layout_width="25.7dp" android:layout_height="25.7dp" android:src="@drawable/icon_cancel" android:layout_alignParentTop="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

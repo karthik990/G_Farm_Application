@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="fui_error_weak_password">
+        <item quantity="one">הסיסמה חלשה מדי. סיסמה חזקה היא סיסמה באורך תו אחד (%1$d) לפחות שמכילה אותיות ומספרים</item>
+        <item quantity="two">הסיסמה חלשה מדי. סיסמה חזקה היא סיסמה באורך %1$d תווים לפחות שמכילה אותיות ומספרים</item>
+        <item quantity="many">הסיסמה חלשה מדי. סיסמה חזקה היא סיסמה באורך %1$d תווים לפחות שמכילה אותיות ומספרים</item>
+        <item quantity="other">הסיסמה חלשה מדי. סיסמה חזקה היא סיסמה באורך %1$d תווים לפחות שמכילה אותיות ומספרים</item>
+    </plurals>
+    <plurals name="tw__time_hours">
+        <item quantity="one">שעה אחת</item>
+        <item quantity="other">%d שעות</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">דקה אחת</item>
+        <item quantity="other">%d דקות</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">שנייה אחת</item>
+        <item quantity="other">%d שניות</item>
+    </plurals>
+</resources>

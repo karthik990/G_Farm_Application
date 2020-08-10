@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/main_layout" android:paddingTop="3.4dp" android:paddingBottom="3.3dp" android:layout_width="match_parent" android:layout_height="@dimen/rss_classic_item_height" android:paddingStart="6.6dp" android:paddingEnd="6.6dp">
+    <ImageView android:id="@+id/rss_list_image" android:layout_height="match_parent" android:src="@drawable/no_image" android:scaleType="centerCrop" app:layout_widthPercent="34%"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_height="match_parent" android:paddingStart="12.7dp" android:paddingEnd="10.7dp" android:layout_toEndOf="@+id/rss_list_image" app:layout_widthPercent="66%">
+        <TextView android:textSize="?attr/font_93" android:textStyle="bold" android:textColor="#a9a9a9" android:id="@+id/rss_list_date" android:background="@color/white" android:paddingTop="9.3dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="?attr/font_133" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/rss_list_title" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+        <TextView android:textSize="?attr/font_10" android:textColor="#a9a9a9" android:ellipsize="end" android:id="@+id/rss_list_description" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="3"/>
+    </LinearLayout>
+</androidx.percentlayout.widget.PercentRelativeLayout>

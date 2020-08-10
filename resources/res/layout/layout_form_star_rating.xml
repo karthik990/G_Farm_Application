@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp">
+    <TextView android:textSize="?attr/font_12" android:id="@+id/form_item_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <p101me.zhanghai.android.materialratingbar.MaterialRatingBar android:id="@+id/form_item_rating_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.MaterialRatingBar.RatingBar"/>
+    <View android:background="#202020" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="2dp"/>
+</LinearLayout>

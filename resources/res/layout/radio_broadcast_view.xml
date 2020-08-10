@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar_layout"/>
+    <RelativeLayout android:id="@+id/video_broadcast_layout" android:background="#3e3844" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/broadcast_cover_layout" android:background="@drawable/default_radio_background" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@+id/broadcast_webview_layout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="10">
+                <TextView android:textSize="?attr/font_24" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="center" android:id="@+id/radio_broadcast_title" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:scrollHorizontally="true" android:singleLine="true" android:freezesText="true" android:marqueeRepeatLimit="marquee_forever" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+                <FrameLayout android:background="@drawable/radio_play_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageButton android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/radio_play" android:background="@drawable/transparent" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/stream_play_128"/>
+                </FrameLayout>
+            </LinearLayout>
+            <com.mobiroller.views.ScrollingTextView android:textSize="15sp" android:textColor="#ffffff" android:ellipsize="marquee" android:gravity="center" android:id="@+id/radio_broadcast_text" android:background="#3e3844" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/radio_seek_layout" android:background="#3e3844" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.5" android:layout_below="@+id/broadcast_webview_layout">
+                <LinearLayout android:gravity="center" android:background="@drawable/progress_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="40dp" android:layout_marginEnd="40dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.2">
+                            <ImageButton android:layout_gravity="center" android:id="@+id/volume_mute" android:background="@drawable/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/volume_mute"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.6">
+                            <SeekBar android:layout_gravity="center" android:id="@+id/volume_seek_bar" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="5dp" android:progressDrawable="@drawable/radio_progress" android:minHeight="5dp" android:thumb="@drawable/thumb" android:paddingStart="15dp" android:paddingEnd="15dp"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.2">
+                            <ImageButton android:layout_gravity="end" android:id="@+id/volume_up" android:background="@drawable/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/volume_up"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

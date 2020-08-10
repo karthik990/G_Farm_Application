@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="64dp" android:paddingStart="24dp" android:paddingEnd="24dp">
+    <ImageView android:id="@+id/payment_type_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/credit_card_icon" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <com.mobiroller.views.custom.MobirollerTextView android:id="@+id/payment_type_name" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Bank Transfer" android:layout_marginStart="20dp" app:colorType="7" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/payment_type_icon" app:layout_constraintTop_toTopOf="0" app:sizeType="3"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

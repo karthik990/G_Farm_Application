@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/main_layout" android:paddingTop="6.7dp" android:paddingBottom="6.6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="6.6dp" android:paddingEnd="6.6dp">
+    <ImageView android:id="@+id/rss_list_image" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <TextView android:textSize="?attr/font_93" android:textStyle="bold" android:textColor="#a9a9a9" android:gravity="center" android:id="@+id/rss_list_date" android:background="@color/white" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="15dp" android:paddingEnd="15dp"/>
+    <TextView android:textSize="?attr/font_147" android:textStyle="bold" android:textColor="@color/black" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/rss_list_title" android:background="@color/white" android:paddingTop="6.7dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="14dp" android:paddingEnd="14dp"/>
+    <TextView android:id="@+id/rss_list_description" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

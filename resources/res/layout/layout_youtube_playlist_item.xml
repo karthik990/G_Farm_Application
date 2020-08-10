@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:padding="7.5dp" android:layout_width="match_parent" android:layout_height="115dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:paddingEnd="7.5dp">
+        <ImageView android:id="@+id/video_image" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/no_image" android:scaleType="fitXY"/>
+        <RelativeLayout android:gravity="center" android:background="#b3000000" android:layout_width="60dp" android:layout_height="match_parent" android:layout_alignParentEnd="true">
+            <ImageView android:layout_width="21dp" android:layout_height="21dp" app:srcCompat="@drawable/ic_subscriptions_24dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:paddingStart="7.5dp">
+        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#000000" android:ellipsize="end" android:id="@+id/video_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:lineSpacingExtra="1sp" android:fontFamily="sans-serif-medium"/>
+        <TextView android:textSize="11sp" android:textStyle="normal" android:textColor="#8d8d8d" android:id="@+id/video_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/video_title" android:lineSpacingExtra="5.5sp" android:fontFamily="sans-serif-light"/>
+    </RelativeLayout>
+</LinearLayout>

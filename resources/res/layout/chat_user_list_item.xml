@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/dialogRootLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/dialogContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.mobiroller.views.CircleImageView android:id="@+id/dialogAvatar" android:layout_width="@dimen/dialog_avatar_width" android:layout_height="@dimen/dialog_avatar_height" android:layout_margin="12dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/dialogAvatar" android:layout_centerVertical="true" android:layout_toEndOf="@+id/dialogAvatar">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/black" android:ellipsize="end" android:id="@+id/dialogName" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:fontFamily="@string/font_fontFamily_medium" android:layout_marginEnd="16dp"/>
+                <TextView android:textColor="#505050" android:id="@+id/dialogStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="@string/font_fontFamily_medium" android:layout_marginEnd="16dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:ellipsize="end" android:gravity="center" android:id="@+id/dialogUnreadBubble" android:background="@drawable/chat_offline_circle" android:layout_width="15dp" android:layout_height="15dp" android:lines="1" android:layout_alignTop="@+id/dialogAvatar" android:layout_alignRight="@+id/dialogAvatar" android:fontFamily="@string/font_fontFamily_medium" android:layout_alignEnd="@+id/dialogAvatar"/>
+        <ImageView android:gravity="center" android:id="@+id/dialogBadge" android:layout_width="20dp" android:layout_height="20dp" android:layout_alignRight="@+id/dialogAvatar" android:layout_alignBottom="@+id/dialogAvatar" android:layout_alignEnd="@+id/dialogAvatar"/>
+        <FrameLayout android:id="@+id/dialogDividerContainer" android:paddingLeft="@dimen/dialog_divider_margin_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_alignParentBottom="true" android:paddingStart="@dimen/dialog_divider_margin_left">
+            <View android:id="@+id/dialogDivider" android:background="@color/dialog_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

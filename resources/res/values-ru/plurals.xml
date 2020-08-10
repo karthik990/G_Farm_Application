@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="fui_error_weak_password">
+        <item quantity="one">Пароль должен состоять из букв и цифр и содержать не меньше %1$d символа.</item>
+        <item quantity="few">Пароль должен состоять из букв и цифр и содержать не меньше %1$d символов.</item>
+        <item quantity="many">Пароль должен состоять из букв и цифр и содержать не меньше %1$d символов.</item>
+        <item quantity="other">Пароль должен состоять из букв и цифр и содержать не меньше %1$d символа.</item>
+    </plurals>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1 ч</item>
+        <item quantity="other">%d ч</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1 мин</item>
+        <item quantity="other">%d мин</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1 с</item>
+        <item quantity="other">%d с</item>
+    </plurals>
+</resources>

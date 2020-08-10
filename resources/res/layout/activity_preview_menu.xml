@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/drawer_layout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" app:theme="@style/ToolBarStyle"/>
+        <FrameLayout android:id="@+id/content_frame" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView android:layout_gravity="start" android:id="@+id/drawer_left" android:background="@drawable/preview_menu_background" android:layout_width="wrap_content" android:layout_height="match_parent" app:headerLayout="@layout/navigation_view_header" app:itemIconTint="@color/white" app:itemTextAppearance="@style/PreviewNavigationDrawerStyle" app:itemTextColor="@color/white" app:menu="@menu/menu_drawer">
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/preview_menu_footer" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/preview_menu_footer_height">
+            <View android:background="#bdbdbd" android:layout_width="match_parent" android:layout_height="0.7dp"/>
+            <androidx.percentlayout.widget.PercentRelativeLayout android:orientation="horizontal" android:id="@+id/preview_menu_social_buttons" android:layout_width="match_parent" android:layout_height="@dimen/preview_menu_social_height" android:layout_marginTop="@dimen/preview_menu_social_margin_top" android:layout_marginStart="@dimen/preview_menu_social_margin_sides" android:layout_marginEnd="@dimen/preview_menu_social_margin_sides">
+                <ImageView android:id="@+id/menu_facebook_icon" android:layout_height="match_parent" android:src="@drawable/menu_facebook_icon" android:alpha="0.3" app:layout_widthPercent="15%"/>
+                <RelativeLayout android:id="@+id/blank_1" android:layout_height="match_parent" android:layout_toEndOf="@+id/menu_facebook_icon" app:layout_widthPercent="6.25%"/>
+                <ImageView android:id="@+id/menu_twitter_icon" android:layout_height="match_parent" android:src="@drawable/menu_twitter_icon" android:alpha="0.3" android:layout_toEndOf="@+id/blank_1" app:layout_widthPercent="15%"/>
+                <RelativeLayout android:id="@+id/blank_2" android:layout_height="match_parent" android:layout_toEndOf="@+id/menu_twitter_icon" app:layout_widthPercent="6.25%"/>
+                <ImageView android:id="@+id/menu_google_icon" android:layout_height="match_parent" android:src="@drawable/menu_google_icon" android:alpha="0.3" android:layout_toEndOf="@+id/blank_2" app:layout_widthPercent="15%"/>
+                <RelativeLayout android:id="@+id/blank_3" android:layout_height="match_parent" android:layout_toEndOf="@+id/menu_google_icon" app:layout_widthPercent="6.25%"/>
+                <ImageView android:id="@+id/menu_linkedin_icon" android:layout_height="match_parent" android:src="@drawable/menu_linkedin_icon" android:alpha="0.3" android:layout_toEndOf="@+id/blank_3" app:layout_widthPercent="15%"/>
+                <RelativeLayout android:id="@+id/blank_4" android:layout_height="match_parent" android:layout_toEndOf="@+id/menu_linkedin_icon" app:layout_widthPercent="6.25%"/>
+                <ImageView android:id="@+id/menu_instagram_icon" android:layout_height="match_parent" android:src="@drawable/menu_instagram_icon" android:alpha="0.3" android:layout_toEndOf="@+id/blank_4" app:layout_widthPercent="15%"/>
+            </androidx.percentlayout.widget.PercentRelativeLayout>
+            <TextView android:textSize="@dimen/preview_menu_copyright_text_size" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/preview_menu_copyright_margin_top" android:text="@string/preview_menu_copyright" android:fontFamily="sans-serif-light"/>
+            <TextView android:textSize="@dimen/preview_menu_copyright_text_size" android:textColor="@color/white" android:gravity="center" android:id="@+id/preview_version" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="sans-serif-light"/>
+        </LinearLayout>
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

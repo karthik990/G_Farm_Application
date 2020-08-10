@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_bookmark_border_white_24dp" android:id="@+id/action_favorite" android:title="@string/action_save" app:showAsAction="always"/>
+    <item android:icon="@drawable/ic_more_vert_white_24dp" android:id="@+id/a_More" android:title="@string/action_more" app:showAsAction="always">
+        <menu/>
+    </item>
+</menu>

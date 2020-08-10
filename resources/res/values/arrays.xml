@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="activities">
+        <item>aveCallNowView</item>
+        <item>aveFavoriteView</item>
+        <item>aveCustomScreenView</item>
+        <item>aveFormView</item>
+        <item>aveFullScreenVideo</item>
+        <item>aveHtmlView</item>
+        <item>aveMainListView</item>
+        <item>aveMapView</item>
+        <item>aveMP3View</item>
+        <item>aveNavigationActivity</item>
+        <item>aveNoteView</item>
+        <item>aveNotificationBoxView</item>
+        <item>avePhotoGalleryView</item>
+        <item>aveRadioBroadcastView</item>
+        <item>aveRssView</item>
+        <item>aveShareView</item>
+        <item>aveTodoListView</item>
+        <item>aveTvBroadcastView</item>
+        <item>aveTweetView</item>
+        <item>aveUserLoginNew</item>
+        <item>aveWebView</item>
+        <item>aveYoutubeView</item>
+        <item>ListMenu</item>
+        <item>PostViewActivity</item>
+        <item>UserCreateAccount</item>
+        <item>UserLogin</item>
+        <item>VideoActivity</item>
+        <item>aveSettingsView</item>
+        <item>aveCatalogView</item>
+        <item>aveFAQView</item>
+        <item>aveMapView</item>
+        <item>aveChatView</item>
+        <item>aveYoutubeAdvancedView</item>
+        <item>aveECommerceView</item>
+    </array>
+    <array name="chat_archive_dialog_options">
+        <item>Delete</item>
+        <item>Unarchive</item>
+    </array>
+    <array name="chat_dialog_options">
+        <item>Delete</item>
+        <item>Archive</item>
+    </array>
+    <array name="connection_required_activities">
+        <item>aveCustomScreenView</item>
+        <item>aveFullScreenVideo</item>
+        <item>aveHtmlView</item>
+        <item>aveMapView</item>
+        <item>aveMP3View</item>
+        <item>avePhotoGalleryView</item>
+        <item>aveRadioBroadcastView</item>
+        <item>aveRSSView</item>
+        <item>aveTvBroadcastView</item>
+        <item>aveTweetView</item>
+        <item>aveUserLoginNew</item>
+        <item>aveWebView</item>
+        <item>aveYoutubeView</item>
+        <item>PostViewActivity</item>
+        <item>UserCreateAccount</item>
+        <item>UserLogin</item>
+        <item>VideoActivity</item>
+        <item>aveChatView</item>
+        <item>aveYoutubeAdvancedView</item>
+        <item>aveECommerceView</item>
+    </array>
+    <array name="favorite_available_modules">
+        <item>aveChatView</item>
+        <item>aveCustomScreenView</item>
+        <item>aveFormView</item>
+        <item>aveMainListView</item>
+        <item>aveMapView</item>
+        <item>aveMP3View</item>
+        <item>aveNoteView</item>
+        <item>aveNotificationBoxView</item>
+        <item>avePhotoGalleryView</item>
+        <item>aveRadioBroadcastView</item>
+        <item>aveRssView</item>
+        <item>aveHtmlView</item>
+        <item>aveTodoListView</item>
+        <item>aveTvBroadcastView</item>
+        <item>aveTweetView</item>
+        <item>aveWebView</item>
+        <item>aveYoutubeView</item>
+        <item>aveFAQView</item>
+        <item>aveCatalogView</item>
+        <item>aveAboutUsView</item>
+        <item>aveEmergencyCallView</item>
+        <item>avePDFView</item>
+    </array>
+    <array name="form_fields_validation">
+        <item>textArea</item>
+        <item>check</item>
+        <item>selection</item>
+        <item>starRating</item>
+        <item>date</item>
+        <item>time</item>
+        <item>phone</item>
+        <item>email</item>
+        <item>label</item>
+        <item>address</item>
+        <item>formImage</item>
+    </array>
+    <array name="module_analytics_name">
+        <item>aveCallNowView</item>
+        <item>aveChatView</item>
+        <item>aveCustomScreenView</item>
+        <item>aveFormView</item>
+        <item>aveMainListView</item>
+        <item>aveMapView</item>
+        <item>aveMP3View</item>
+        <item>aveNoteView</item>
+        <item>aveNotificationBoxView</item>
+        <item>avePhotoGalleryView</item>
+        <item>aveRadioBroadcastView</item>
+        <item>aveRssView</item>
+        <item>aveShareView</item>
+        <item>aveTodoListView</item>
+        <item>aveTvBroadcastView</item>
+        <item>aveTweetView</item>
+        <item>aveWebView</item>
+        <item>aveYoutubeView</item>
+        <item>aveSettingsView</item>
+        <item>aveFAQView</item>
+        <item>aveCatalogView</item>
+        <item>aveAboutUsView</item>
+        <item>aveEmergencyCallView</item>
+        <item>aveFavoriteView</item>
+        <item>aveYoutubeAdvancedView</item>
+        <item>aveECommerceView</item>
+    </array>
+    <array name="module_analytics_value">
+        <item>Call Module</item>
+        <item>Chat Module</item>
+        <item>Custom Screen Module</item>
+        <item>Form Module</item>
+        <item>Standard or Submenu Module</item>
+        <item>Map Module</item>
+        <item>MP3 Module</item>
+        <item>Note Module</item>
+        <item>Notification Module</item>
+        <item>Gallery Module</item>
+        <item>Radio Module</item>
+        <item>Rss Module</item>
+        <item>Share Module</item>
+        <item>Todo Module</item>
+        <item>TV Module</item>
+        <item>Twitter Module</item>
+        <item>Web Site Module</item>
+        <item>Youtube Module</item>
+        <item>Settings Module</item>
+        <item>FAQ Module</item>
+        <item>Catalog Module</item>
+        <item>AboutUs Module</item>
+        <item>Emergency Call Module</item>
+        <item>Favorite Module</item>
+        <item>Youtube Advanced Module</item>
+        <item>E-Commerce Module</item>
+    </array>
+    <array name="order_flow_status">
+        <item>Shipping</item>
+        <item>Payment</item>
+        <item>  Order   </item>
+    </array>
+    <array name="preview_not_supported_modules">
+        <item>aveChatView</item>
+    </array>
+    <array name="supported_languages">
+        <item>English</item>
+        <item>Türkçe</item>
+        <item>Deutsch</item>
+        <item>русский</item>
+        <item>Français</item>
+        <item>Español</item>
+        <item>Italiano</item>
+        <item>فارسی</item>
+        <item>العربية</item>
+    </array>
+    <array name="supported_languages_country_codes">
+        <item>US</item>
+        <item>TR</item>
+        <item>DE</item>
+        <item>RU</item>
+        <item>FR</item>
+        <item>ES</item>
+        <item>IT</item>
+        <item>IR</item>
+        <item>AR</item>
+    </array>
+    <array name="supported_languages_language_codes">
+        <item>en</item>
+        <item>tr</item>
+        <item>de</item>
+        <item>ru</item>
+        <item>fr</item>
+        <item>es</item>
+        <item>it</item>
+        <item>fa</item>
+        <item>ar</item>
+    </array>
+    <array name="text_size_list">
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Big</item>
+        <item>Very Big</item>
+    </array>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#eff4f5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+    <FrameLayout android:id="@+id/faq_popup_title_layout" android:background="#4dabcd" android:layout_width="300dp" android:layout_height="wrap_content">
+        <TextView android:textSize="?attr/font_15" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/faq_popup_question" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="10"/>
+    </FrameLayout>
+    <RelativeLayout android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20dp" android:paddingEnd="20dp">
+        <EditText android:textSize="?attr/font_15" android:textColor="#bc3e3e3e" android:id="@+id/faq_popup_answer" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:cursorVisible="false" android:minLines="3" android:editable="false"/>
+    </RelativeLayout>
+    <LinearLayout android:id="@+id/faq_popup_close_layout" android:layout_width="match_parent" android:layout_height="40dp">
+        <TextView android:textSize="?attr/font_17" android:textStyle="bold" android:gravity="center" android:id="@+id/faq_pop_close_text_view" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/close"/>
+    </LinearLayout>
+</LinearLayout>

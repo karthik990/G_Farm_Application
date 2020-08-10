@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/main_layout" android:layout_width="match_parent" android:layout_height="@dimen/rss_header_height">
+    <ImageView android:id="@+id/rss_list_image" android:layout_width="match_parent" android:layout_height="@dimen/rss_header_item_height" android:src="@drawable/no_image" android:scaleType="centerCrop" android:transitionName="rssImage"/>
+    <RelativeLayout android:gravity="center" android:background="@color/white" android:paddingTop="7.3dp" android:paddingBottom="7.3dp" android:layout_width="match_parent" android:layout_height="@dimen/rss_header_item_text_height" android:layout_alignParentBottom="true" android:paddingStart="10dp" android:paddingEnd="10dp">
+        <TextView android:textSize="?attr/font_133" android:typeface="sans" android:textStyle="bold" android:textColor="#000000" android:ellipsize="end" android:gravity="center" android:id="@+id/rss_list_title" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLines="2" android:paddingStart="15dp" android:paddingEnd="15dp"/>
+    </RelativeLayout>
+</RelativeLayout>

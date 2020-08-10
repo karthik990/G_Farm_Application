@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/note_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="120dp">
+    <RelativeLayout android:layout_gravity="right" android:id="@+id/backgroundView" android:background="#ff5358" android:layout_width="105.3dp" android:layout_height="match_parent" android:src="@drawable/icon_trash">
+        <ImageView android:paddingTop="44dp" android:paddingBottom="44dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icon_trash" android:paddingStart="40dp" android:paddingEnd="40dp"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/foregroundView" android:background="@drawable/note_item" android:layout_width="match_parent" android:layout_height="120dp">
+        <View android:id="@+id/note_color" android:background="@color/white" android:layout_width="6.7dp" android:layout_height="match_parent"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/note_text_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="2" android:paddingStart="14dp" android:paddingEnd="11.3dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="84.1dp">
+                <TextView android:textSize="?attr/font_147" android:textStyle="bold" android:textColor="#000000" android:ellipsize="end" android:id="@+id/note_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="5dp" android:maxLines="1" android:fontFamily="sans-serif-condensed"/>
+                <TextView android:textSize="?attr/font_12" android:textColor="#000000" android:ellipsize="end" android:id="@+id/note_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:maxLines="3" android:layout_below="@+id/note_title" android:fontFamily="sans-serif-condensed"/>
+            </RelativeLayout>
+            <TextView android:textSize="?attr/font_93" android:textStyle="bold" android:textColor="#a9a9a9" android:id="@+id/note_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:fontFamily="sans-serif-condensed"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="end" android:id="@+id/note_image" android:layout_width="105.3dp" android:layout_height="120dp" android:scaleType="centerCrop"/>
+    </LinearLayout>
+</FrameLayout>

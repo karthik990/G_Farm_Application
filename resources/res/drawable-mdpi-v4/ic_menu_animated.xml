@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:drawable="@drawable/ic_menu_vector">
+    <target android:name="menu" android:animation="@animator/menu_to_back_morph"/>
+    <target android:name="rotation" android:animation="@animator/menu_to_back_rotation"/>
+</animated-vector>

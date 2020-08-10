@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="chat_archive_dialog_options">
+        <item>Sil</item>
+        <item>Arşivden geri getir</item>
+    </array>
+    <array name="chat_dialog_options">
+        <item>Sil</item>
+        <item>Arşivle</item>
+    </array>
+    <array name="order_flow_status">
+        <item>Kargo</item>
+        <item>Ödeme</item>
+        <item>Sipariş</item>
+    </array>
+    <array name="text_size_list">
+        <item>Küçük</item>
+        <item>Normal</item>
+        <item>Büyük</item>
+        <item>Çok Büyük</item>
+    </array>
+</resources>

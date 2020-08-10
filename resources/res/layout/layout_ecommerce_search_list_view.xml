@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/constraintLayout" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/toolbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="0">
+        <com.mobiroller.views.custom.MobirollerToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:navigationIcon="@drawable/ic_close_white_24dp" app:title=""/>
+        <com.mobiroller.views.MaterialSearchView android:textColorHint="@color/gray" android:id="@+id/search_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/list" android:paddingTop="7.5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:paddingStart="7.5dp" android:paddingEnd="7.5dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar_layout"/>
+    <com.mobiroller.views.custom.MobirollerEmptyView android:id="@+id/empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundImageTintColor="#f8e7d8" app:description="@string/e_commerce_product_search_no_result_description" app:emptyIcon="@drawable/ic_no_search_icon" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar_layout" app:title=""/>
+</androidx.constraintlayout.widget.ConstraintLayout>

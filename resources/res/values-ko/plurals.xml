@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="fui_error_weak_password">
+        <item quantity="one">안전한 비밀번호가 아닙니다. 길이가 %1$d자 이상이고 문자와 숫자가 조합되어야 합니다.</item>
+        <item quantity="other">안전한 비밀번호가 아닙니다. 길이가 %1$d자 이상이고 문자와 숫자가 조합되어야 합니다.</item>
+    </plurals>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1시간</item>
+        <item quantity="other">%d시간</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1분</item>
+        <item quantity="other">%d분</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1초</item>
+        <item quantity="other">%d초</item>
+    </plurals>
+</resources>

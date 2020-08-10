@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <RelativeLayout android:id="@+id/nav_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/gridImage" android:background="@drawable/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.mobiroller.widget.PageIndicator android:id="@+id/page_indicator_other" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.mobiroller.views.PagedDragDropGrid android:id="@+id/gridView" android:background="@drawable/transparent" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="15dp" android:layout_below="@+id/gridImage" android:layoutDirection="ltr"/>
+        <include layout="@layout/toolbar_layout"/>
+    </RelativeLayout>
+</merge>

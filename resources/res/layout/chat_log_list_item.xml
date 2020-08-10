@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/dialogRootLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/dialogContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@+id/senderLayout" android:layout_width="80dp" android:layout_height="80dp">
+            <com.mobiroller.views.CircleImageView android:layout_gravity="center" android:id="@+id/dialogSenderAvatar" android:background="@drawable/circle_gray_background" android:padding="4dp" android:layout_width="40dp" android:layout_height="40dp"/>
+        </RelativeLayout>
+        <RelativeLayout android:orientation="vertical" android:id="@+id/messageLayout" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="80dp" android:layout_toRightOf="@+id/senderLayout" android:paddingStart="4dp" android:paddingEnd="16dp" android:layout_toEndOf="@+id/senderLayout">
+            <TextView android:textSize="?attr/font_16" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/dialogDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentEnd="true"/>
+            <RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:layout_below="@+id/dialogDate">
+                <TextView android:textSize="?attr/font_16" android:ellipsize="end" android:gravity="top" android:id="@+id/dialogLastMessage" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="3" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <FrameLayout android:id="@+id/dialogDividerContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_alignParentBottom="true">
+            <View android:id="@+id/dialogDivider" android:background="@color/dialog_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

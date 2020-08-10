@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="386dp">
+            <ImageView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="386dp" android:src="@drawable/test3" android:scaleType="fitXY"/>
+            <ImageView android:id="@+id/image_filter_one" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/test1" android:scaleType="fitXY"/>
+            <ImageView android:id="@+id/image_filter_two" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/test2" android:scaleType="fitXY"/>
+            <ImageView android:id="@+id/close_button" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="40dp" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_close_white_24dp"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/text_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="110dp">
+            <TextView android:textSize="20sp" android:textStyle="normal" android:textColor="#ffffff" android:gravity="center" android:id="@+id/in_app_purchase_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/in_app_purchase_title" android:textAllCaps="true" android:fontFamily="sans-serif-medium"/>
+            <TextView android:textSize="15sp" android:textColor="#ffffff" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/in_app_purchase_description" android:layout_below="@+id/in_app_purchase_title" android:lineSpacingExtra="4sp" android:paddingStart="40dp" android:paddingEnd="40dp"/>
+        </RelativeLayout>
+        <com.mobiroller.views.WrapContentViewPager android:id="@+id/view_pager" android:paddingTop="10dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_above="@+id/view_pager_indicator" android:layout_below="@+id/text_layout" android:paddingStart="50dp" android:paddingEnd="50dp"/>
+        <RelativeLayout android:gravity="center" android:id="@+id/view_pager_indicator" android:layout_width="match_parent" android:layout_height="@dimen/rss_slider_indicator_height" android:layout_marginBottom="20dp" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/view_pager_count_dots" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

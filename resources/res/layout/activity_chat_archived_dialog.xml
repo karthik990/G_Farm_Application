@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/archived_main_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/archived_overlay_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.mobiroller.views.custom.MobirollerToolbar android:id="@+id/toolbar_top" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize" app:layout_scrollFlags="5" app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/chat_list_empty_view" android:paddingBottom="150dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/empty_view_image" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:adjustViewBounds="true" android:contentDescription="@string/no_message_available" app:srcCompat="@drawable/ic_chat_bubble_outline_black_36dp"/>
+            <TextView android:textSize="?attr/font_16" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/empty_view_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_message_available"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/chat_archived_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</RelativeLayout>

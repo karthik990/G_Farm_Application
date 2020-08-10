@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="fui_error_weak_password">
+        <item quantity="one">Passordet er ikke sterkt nok. Bruk minst %1$d tegn og en blanding av bokstaver og tall</item>
+        <item quantity="other">Passordet er ikke sterkt nok. Bruk minst %1$d tegn og en blanding av bokstaver og tall</item>
+    </plurals>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1 t</item>
+        <item quantity="other">%d t</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1 m</item>
+        <item quantity="other">%d m</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1 s</item>
+        <item quantity="other">%d s</item>
+    </plurals>
+</resources>

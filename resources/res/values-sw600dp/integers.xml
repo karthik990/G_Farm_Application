@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="design_snackbar_text_max_lines">1</integer>
+    <integer name="rss_layout_1">354</integer>
+    <integer name="rss_layout_2">200</integer>
+    <integer name="rss_layout_4">534</integer>
+    <integer name="rss_layout_5">280</integer>
+    <integer name="youtube_layout_1">200</integer>
+    <integer name="youtube_layout_3">534</integer>
+    <integer name="youtube_layout_4">472</integer>
+    <integer name="youtube_layout_5">360</integer>
+    <integer name="youtube_layout_6">340</integer>
+</resources>

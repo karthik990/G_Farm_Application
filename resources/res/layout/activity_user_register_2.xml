@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/register_overlay" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.percentlayout.widget.PercentRelativeLayout android:orientation="vertical" android:id="@+id/register_layout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="55dp" android:paddingEnd="55dp">
+            <RelativeLayout android:id="@+id/blank_top_space" android:layout_width="match_parent" android:layout_height="51.2dp"/>
+            <ImageView android:id="@+id/register_banner" android:layout_width="match_parent" android:layout_height="128dp" android:layout_below="@+id/blank_top_space" android:layout_centerHorizontal="true"/>
+            <RelativeLayout android:id="@+id/blank_middle_space" android:layout_width="match_parent" android:layout_height="44.8dp" android:layout_below="@+id/register_banner"/>
+            <RelativeLayout android:id="@+id/reset_password_form" android:background="@color/white" android:padding="13.3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/blank_middle_space">
+                <RelativeLayout android:gravity="center" android:id="@+id/label_name" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp">
+                    <LinearLayout android:theme="@style/TextLabel" android:textColorHint="#919191" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <EditText android:theme="@style/EditTextLight" android:textSize="?attr/font_14" android:textColor="#919191" android:textColorHint="#919191" android:ellipsize="end" android:id="@+id/name" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="40dp" android:hint="@string/name_surname" android:maxLines="1" android:ems="10" android:inputType="textPersonName" android:imeOptions="actionNext" android:fontFamily="sans-serif-light" android:paddingStart="13.3dp">
+                            <requestFocus/>
+                        </EditText>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:id="@+id/label_email" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:layout_below="@+id/label_name">
+                    <LinearLayout android:theme="@style/TextLabel" android:textColorHint="#919191" android:gravity="center" android:id="@+id/input_layout_email" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <EditText android:theme="@style/EditTextLight" android:textSize="?attr/font_14" android:textColor="#919191" android:textColorHint="#919191" android:ellipsize="end" android:id="@+id/email" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="40dp" android:hint="@string/email_address" android:maxLines="1" android:ems="10" android:inputType="textEmailAddress" android:imeOptions="actionNext" android:fontFamily="sans-serif-light" android:paddingStart="13.3dp">
+                            <requestFocus/>
+                        </EditText>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:id="@+id/label_password" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:layout_below="@+id/label_email" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                    <LinearLayout android:theme="@style/TextLabel" android:textColorHint="#919191" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <EditText android:theme="@style/EditTextLight" android:textSize="?attr/font_14" android:textColor="#919191" android:textColorHint="#919191" android:ellipsize="end" android:id="@+id/password" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="40dp" android:hint="@string/login_password" android:maxLines="1" android:ems="10" android:inputType="textPassword" android:imeOptions="actionNext" android:fontFamily="sans-serif-light" android:textAlignment="viewStart" android:paddingStart="13.3dp">
+                            <requestFocus/>
+                        </EditText>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:id="@+id/label_password_repeat" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginBottom="10dp" android:layout_below="@+id/label_password" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                    <LinearLayout android:theme="@style/TextLabel" android:textColorHint="#919191" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <EditText android:theme="@style/EditTextLight" android:textSize="?attr/font_14" android:textColor="#919191" android:textColorHint="#919191" android:ellipsize="end" android:id="@+id/password_repeat" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="40dp" android:hint="@string/password_validation" android:maxLines="1" android:ems="10" android:inputType="textPassword" android:imeOptions="actionDone" android:fontFamily="sans-serif-light" android:textAlignment="viewStart" android:paddingStart="13.3dp">
+                            <requestFocus/>
+                        </EditText>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:id="@+id/label_button" android:layout_width="match_parent" android:layout_height="40dp" android:layout_below="@+id/label_password_repeat">
+                    <p015br.com.simplepass.loading_button_lib.customViews.CircularProgressButton android:textSize="?attr/font_16" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/register_button" android:background="@color/black" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/register" android:textAllCaps="false" android:fontFamily="sans-serif" app:spinning_bar_color="@color/white"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/or_you_can" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/or_you_can" android:layout_below="@+id/reset_password_form"/>
+            <RelativeLayout android:gravity="center" android:id="@+id/sign_in_button" android:background="#4285f4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:layout_below="@+id/or_you_can" style="?android:attr/borderlessButtonStyle">
+                <ImageView android:id="@+id/google_icon" android:layout_width="38dp" android:layout_height="38dp" android:layout_marginTop="1dp" android:layout_marginBottom="1dp" android:src="@drawable/g_button" android:layout_centerVertical="true" android:layout_marginStart="1dp"/>
+                <TextView android:textSize="?attr/font_16" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/sign_in_with_google" android:fontFamily="sans-serif" android:layout_toEndOf="@+id/google_icon"/>
+            </RelativeLayout>
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/user_agreement" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="20dp" android:text="@string/user_agreement" android:layout_below="@+id/sign_in_button"/>
+        </androidx.percentlayout.widget.PercentRelativeLayout>
+    </ScrollView>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/toolbar_layout"/>
+</RelativeLayout>

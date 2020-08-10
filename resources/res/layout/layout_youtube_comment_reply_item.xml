@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#f0f0f0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:layout_marginStart="50dp" android:layout_marginEnd="20dp">
+    <com.mobiroller.views.CircleImageView android:id="@+id/commenter_image" android:layout_width="33dp" android:layout_height="33dp"/>
+    <RelativeLayout android:background="@drawable/comment_background" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.5dp" android:paddingEnd="10dp" android:layout_marginStart="5.5dp" android:layout_toEndOf="@+id/commenter_image">
+        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#545454" android:id="@+id/commenter_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+        <TextView android:id="@+id/comment_dot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="•" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:layout_toEndOf="@+id/commenter_name"/>
+        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#999999" android:id="@+id/comment_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif" android:layout_marginEnd="5dp" android:layout_toEndOf="@+id/comment_dot"/>
+        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#000000" android:textColorLink="#2b6ace" android:autoLink="web" android:id="@+id/commenter_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_below="@+id/commenter_name" android:lineSpacingExtra="6sp" android:fontFamily="sans-serif"/>
+        <RelativeLayout android:id="@+id/youtube_comment_actions_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/commenter_comment">
+            <RelativeLayout android:gravity="center" android:id="@+id/youtube_like_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView android:id="@+id/youtube_like_icon" android:layout_width="wrap_content" android:layout_height="18dp" app:srcCompat="@drawable/ic_thumb_up_black_24dp"/>
+                <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#909090" android:gravity="center" android:id="@+id/youtube_like_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="21 B" android:lineSpacingExtra="10.5sp" android:fontFamily="sans-serif" android:layout_toEndOf="@+id/youtube_like_icon"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

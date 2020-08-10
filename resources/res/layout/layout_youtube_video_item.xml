@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:padding="7.5dp" android:layout_width="match_parent" android:layout_height="115dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:paddingEnd="7.5dp">
+        <ImageView android:id="@+id/video_image" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/no_image" android:scaleType="fitXY"/>
+        <TextView android:textSize="12sp" android:textStyle="normal" android:textColor="#ffffff" android:id="@+id/video_duration" android:background="@drawable/youtube_item_background" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_alignParentBottom="true" android:lineSpacingExtra="4.5sp" android:fontFamily="sans-serif-light" android:paddingStart="6dp" android:paddingEnd="6dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1" android:paddingStart="7.5dp">
+        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#000000" android:ellipsize="end" android:id="@+id/video_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:lineSpacingExtra="1sp" android:fontFamily="sans-serif-medium"/>
+        <TextView android:textSize="11sp" android:textStyle="normal" android:textColor="#8d8d8d" android:id="@+id/video_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/video_title" android:lineSpacingExtra="5.5sp" android:fontFamily="sans-serif-light"/>
+        <TextView android:textSize="11sp" android:textStyle="normal" android:textColor="#8d8d8d" android:id="@+id/video_view_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/video_date" android:lineSpacingExtra="5.5sp" android:fontFamily="sans-serif-light"/>
+    </RelativeLayout>
+</LinearLayout>

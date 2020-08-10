@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.mobiroller.views.HackyViewPager android:id="@+id/view_pager" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.mobiroller.views.custom.MobirollerTextView android:gravity="center" android:orientation="horizontal" android:id="@+id/count_text_view" android:layout_width="wrap_content" android:layout_height="51dp" android:layout_marginBottom="20dp" app:colorType="7" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:sizeType="3"/>
+    <ImageView android:id="@+id/close_button" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:tint="@color/black" android:layout_marginEnd="20dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" app:srcCompat="@drawable/ic_close_grey_24dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

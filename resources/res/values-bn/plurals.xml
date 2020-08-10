@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="fui_error_weak_password">
+        <item quantity="one">পাসওয়ার্ডটি পর্যাপ্ত সুরক্ষিত নয়। কমপক্ষে %1$dটি বিশেষ বর্ণ এবং অক্ষর ও সংখ্যা মিশিয়ে ব্যবহার করুন</item>
+        <item quantity="other">পাসওয়ার্ডটি পর্যাপ্ত সুরক্ষিত নয়। কমপক্ষে %1$dটি বিশেষ বর্ণ এবং অক্ষর ও সংখ্যা মিশিয়ে ব্যবহার করুন</item>
+    </plurals>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1ঘ</item>
+        <item quantity="other">%dঘ</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1মি</item>
+        <item quantity="other">%dমি</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1সে</item>
+        <item quantity="other">%dসেকেন্ড</item>
+    </plurals>
+</resources>

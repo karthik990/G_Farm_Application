@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.infideap.drawerbehavior.Advance3DDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/drawer_layout" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar_layout" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+            <com.mobiroller.views.custom.MobirollerToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" app:layout_scrollFlags="4" app:theme="@style/ToolBarStyle"/>
+        </com.google.android.material.appbar.AppBarLayout>
+        <FrameLayout android:id="@+id/frame_container" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        <RelativeLayout android:id="@+id/adsView" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.google.android.material.navigation.NavigationView android:layout_gravity="start" android:id="@+id/list_slidermenu" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="match_parent" app:itemIconTint="@color/white" app:itemTextAppearance="@style/PreviewNavigationDrawerStyle" app:itemTextColor="@color/white" app:theme="@style/PreviewNavigationDrawerStyle"/>
+</com.infideap.drawerbehavior.Advance3DDrawerLayout>

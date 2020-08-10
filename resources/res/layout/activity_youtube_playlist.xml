@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/playlist_main_layout" android:background="#f2f1ef" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar_layout"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/playlist_list" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="6dp"/>
+        <com.github.ybq.android.spinkit.SpinKitView android:id="@+id/load_more_progress_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:SpinKit_Color="@color/dark_red" app:SpinKit_Style="4"/>
+    </RelativeLayout>
+</LinearLayout>

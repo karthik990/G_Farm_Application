@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:left="3.3dp" android:right="3.3dp">
+        <shape android:dither="true" android:shape="oval" android:useLevel="true">
+            <size android:height="@dimen/rss_slider_indicator_item_height" android:width="@dimen/rss_slider_indicator_item_height"/>
+            <solid android:color="#a9a9a9"/>
+        </shape>
+    </item>
+</layer-list>

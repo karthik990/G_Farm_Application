@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/video_main_layout" android:layout_width="match_parent" android:layout_height="@dimen/youtube_type_five_height" android:layout_margin="6.6dp">
+    <ImageView android:id="@+id/video_image" android:layout_width="match_parent" android:layout_height="@dimen/youtube_type_five_image_height" android:src="@drawable/no_image" android:scaleType="centerCrop"/>
+    <ImageView android:padding="30dp" android:layout_width="match_parent" android:layout_height="@dimen/youtube_type_five_image_height" android:src="@drawable/icon_play"/>
+    <ProgressBar android:id="@+id/video_progress" android:padding="30dp" android:layout_width="match_parent" android:layout_height="@dimen/youtube_type_five_image_height"/>
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/youtube_type_five_title_height" android:layout_alignParentBottom="true" android:paddingStart="12dp" android:paddingEnd="12dp">
+        <TextView android:textSize="?attr/font_93" android:textStyle="bold" android:textColor="#a9a9a9" android:gravity="center_horizontal" android:id="@+id/video_duration" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+        <TextView android:textSize="?attr/font_113" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:id="@+id/video_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxLines="2" android:layout_below="@+id/video_duration"/>
+    </RelativeLayout>
+</RelativeLayout>

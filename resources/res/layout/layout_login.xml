@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/login_overlay" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.percentlayout.widget.PercentRelativeLayout android:orientation="vertical" android:id="@+id/login_layout" android:background="@drawable/splash" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="55dp" android:paddingEnd="55dp">
+        <RelativeLayout android:id="@+id/blank_top_space" app:layout_heightPercent="9%" app:layout_widthPercent="100%"/>
+        <ImageView android:id="@+id/login_banner" android:layout_width="match_parent" android:src="@drawable/login_logo_v_2" android:layout_below="@+id/blank_top_space" android:layout_centerHorizontal="true" app:layout_heightPercent="20%"/>
+        <RelativeLayout android:id="@+id/blank_middle_space" android:layout_below="@+id/login_banner" app:layout_heightPercent="12%" app:layout_widthPercent="100%"/>
+        <RelativeLayout android:id="@+id/login_form" android:layout_below="@+id/blank_middle_space" app:layout_heightPercent="42.6%" app:layout_widthPercent="100%">
+            <RelativeLayout android:gravity="center" android:id="@+id/label_email" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:theme="@style/TextLabel" android:textColorHint="#c1c2c4" android:gravity="center" android:id="@+id/input_layout_password" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <EditText android:theme="@style/EditTextLight" android:textSize="14sp" android:ellipsize="end" android:id="@+id/email" android:layout_width="match_parent" android:layout_height="50dp" android:hint="@string/email_address" android:maxLines="1" android:ems="10" android:drawablePadding="19.3dp" android:inputType="textEmailAddress" android:drawableStart="@drawable/icon_mail" android:fontFamily="sans-serif-light" android:paddingStart="13.3dp">
+                        <requestFocus/>
+                    </EditText>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@+id/label_password" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_below="@+id/label_email" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <LinearLayout android:theme="@style/TextLabel" android:textColorHint="#c1c2c4" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <EditText android:theme="@style/EditTextLight" android:textSize="14sp" android:ellipsize="end" android:id="@+id/password" android:layout_width="match_parent" android:layout_height="50dp" android:hint="@string/login_password" android:maxLines="1" android:ems="10" android:drawablePadding="22.7dp" android:inputType="textPassword" android:drawableStart="@drawable/icon_password" android:fontFamily="sans-serif-light" android:paddingStart="16.7dp">
+                        <requestFocus/>
+                    </EditText>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@+id/label_button" android:layout_width="match_parent" android:layout_height="46.7dp" android:layout_below="@+id/label_password">
+                <p015br.com.simplepass.loading_button_lib.customViews.CircularProgressButton android:textSize="?attr/font_16" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/login_button" android:background="@drawable/login_button_bg" android:layout_width="match_parent" android:layout_height="46.7dp" android:text="@string/user_login" android:textAllCaps="false" android:fontFamily="sans-serif" app:spinning_bar_color="@color/white"/>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:id="@+id/label_forgot" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="19dp" android:layout_below="@+id/label_button">
+                <TextView android:textSize="?attr/font_16" android:textColor="@color/white" android:gravity="center" android:id="@+id/forgot_password_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/forgot_password" android:fontFamily="sans-serif"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_alignParentBottom="true" app:layout_heightPercent="16.4%">
+            <TextView android:textSize="?attr/font_16" android:textColor="@color/white" android:gravity="center" android:id="@+id/sign_up_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dont_have_account" android:fontFamily="sans-serif"/>
+        </RelativeLayout>
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+</RelativeLayout>

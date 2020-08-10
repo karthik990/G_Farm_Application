@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageButton android:id="@+id/attachmentButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+    <androidx.legacy.widget.Space android:id="@+id/attachmentButtonSpace" android:layout_width="0dp" android:layout_height="0dp" android:layout_toRightOf="@+id/attachmentButton" android:layout_toEndOf="@+id/attachmentButton"/>
+    <EditText android:id="@+id/messageInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/sendButtonSpace" android:layout_toRightOf="@+id/attachmentButtonSpace" android:layout_centerVertical="true" android:inputType="none|text|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine" android:layout_toStartOf="@+id/sendButtonSpace" android:layout_toEndOf="@+id/attachmentButtonSpace"/>
+    <androidx.legacy.widget.Space android:id="@+id/sendButtonSpace" android:layout_width="0dp" android:layout_height="0dp" android:layout_toLeftOf="@+id/messageSendButton" android:layout_toStartOf="@+id/messageSendButton"/>
+    <ImageButton android:id="@+id/messageSendButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+</merge>

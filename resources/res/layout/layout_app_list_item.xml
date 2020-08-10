@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/main_layout" android:background="@color/white" android:padding="13.3dp" android:layout_width="match_parent" android:layout_height="120dp" android:layout_margin="6.7dp">
+    <RelativeLayout android:id="@+id/logo_layout" android:layout_width="93.3dp" android:layout_height="93.3dp" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/logo" android:layout_width="93.3dp" android:layout_height="93.3dp" android:scaleType="centerCrop"/>
+        <ProgressBar android:id="@+id/logo_progress" android:padding="30dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="130dp" android:paddingStart="12.7dp" android:paddingEnd="12.7dp" android:layout_toEndOf="@+id/logo_layout">
+        <TextView android:textSize="?attr/font_153" android:textStyle="bold" android:textColor="#373737" android:ellipsize="end" android:id="@+id/app_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Test" android:maxLines="3"/>
+        <RelativeLayout android:gravity="center" android:id="@+id/package_layout" android:layout_width="wrap_content" android:layout_height="16dp" android:layout_marginTop="10dp" android:layout_below="@+id/app_title">
+            <TextView android:textSize="?attr/font_87" android:textColor="@color/white" android:id="@+id/package_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ECO" android:paddingStart="8.7dp" android:paddingEnd="8.7dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:layout_width="36dp" android:layout_height="48dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="-10dp" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_navigate_next_black_24dp"/>
+</RelativeLayout>

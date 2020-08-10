@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/splash" android:background="@drawable/splash" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/dynamic_splash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="112dp" android:src="@drawable/preview_splash_logo" android:layout_centerHorizontal="true"/>
+    <com.facebook.shimmer.ShimmerFrameLayout android:id="@+id/shimmer_view_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/dynamic_splash" android:layout_centerHorizontal="true" app:shimmer_duration="1500">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/splash_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:src="@drawable/preview_splash_text" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="@dimen/splash_motto_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/splash_motto" android:layout_below="@+id/splash_text" android:layout_centerHorizontal="true" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <com.github.ybq.android.spinkit.SpinKitView android:layout_gravity="center" android:id="@+id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="124dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:SpinKit_Color="@color/white" style="@style/SpinKitView.Large.Circle"/>
+</RelativeLayout>

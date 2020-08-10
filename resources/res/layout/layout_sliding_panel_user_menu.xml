@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="35dp" android:paddingEnd="35dp">
+    <androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp">
+        <com.mobiroller.views.CircleImageView android:id="@+id/header_user_image" android:layout_width="60dp" android:layout_height="60dp" app:civ_border_color="@color/white" app:civ_border_width="2dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:srcCompat="@drawable/ic_account_circle_black_36dp"/>
+        <RelativeLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/header_user_image">
+            <LinearLayout android:orientation="vertical" android:id="@+id/header_user_info_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <TextView android:textSize="?attr/font_14" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@+id/header_user_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="John Doe"/>
+                <TextView android:textSize="?attr/font_14" android:textColor="#ffffff" android:id="@+id/header_user_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="johndoe@gmail.com"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="40dp" android:layout_height="40dp" android:layout_margin="10dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0">
+            <ImageView android:id="@+id/header_login_icon" android:layout_width="20dp" android:layout_height="20dp" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_login_white_24dp"/>
+            <ImageView android:id="@+id/header_drop_down" android:layout_width="30dp" android:layout_height="30dp" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_arrow_drop_down_white_24dp"/>
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:background="@color/white" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginStart="25dp" android:layout_marginEnd="25dp" app:layout_constraintBottom_toBottomOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

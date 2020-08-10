@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="fui_error_weak_password">
+        <item quantity="one">Parola nu este suficient de puternică. Folosiți cel puțin %1$d caracter și o combinație de litere și cifre.</item>
+        <item quantity="few">Parola nu este suficient de puternică. Folosiți cel puțin %1$d caractere și o combinație de litere și cifre.</item>
+        <item quantity="other">Parola nu este suficient de puternică. Folosiți cel puțin %1$d de caractere și o combinație de litere și cifre.</item>
+    </plurals>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1 h</item>
+        <item quantity="other">%d h</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1 m</item>
+        <item quantity="other">%d m</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1 s</item>
+        <item quantity="other">%d s</item>
+    </plurals>
+</resources>

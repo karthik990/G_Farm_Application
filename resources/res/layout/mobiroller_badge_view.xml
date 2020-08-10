@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/main_layout" android:background="@color/blue" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.mobiroller.views.custom.MobirollerTextView android:id="@+id/badge_text" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SOLD OUT" android:includeFontPadding="false" android:paddingStart="12dp" android:paddingEnd="12dp" app:sizeType="6"/>
+</RelativeLayout>

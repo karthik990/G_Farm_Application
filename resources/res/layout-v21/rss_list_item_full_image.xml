@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/main_layout" android:paddingTop="6.7dp" android:paddingBottom="6.6dp" android:layout_width="match_parent" android:layout_height="@dimen/rss_full_image_layout_item_height" android:paddingStart="6.6dp" android:paddingEnd="6.6dp">
+    <ImageView android:id="@+id/rss_list_image" android:layout_width="match_parent" android:layout_height="@dimen/rss_full_image_item_height" android:src="@drawable/no_image" android:scaleType="centerCrop" android:transitionName="rssImage"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/rss_full_title_layout_item_height">
+        <TextView android:textSize="?attr/font_93" android:textStyle="bold" android:textColor="#a9a9a9" android:gravity="center" android:id="@+id/rss_list_date" android:background="@color/white" android:paddingTop="9.3dp" android:layout_width="match_parent" android:layout_height="@dimen/rss_full_date_item_height" android:paddingStart="15dp" android:paddingEnd="15dp"/>
+        <TextView android:textSize="?attr/font_113" android:textStyle="bold" android:textColor="#000000" android:ellipsize="end" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/rss_list_title" android:background="@color/white" android:paddingBottom="7.3dp" android:layout_width="match_parent" android:layout_height="@dimen/rss_full_title_item_height" android:maxLines="2" android:paddingStart="9.3dp" android:paddingEnd="9.3dp"/>
+    </LinearLayout>
+    <TextView android:id="@+id/rss_list_description" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

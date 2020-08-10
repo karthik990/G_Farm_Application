@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/addtaskdialog" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1" android:paddingStart="25dp" android:paddingEnd="15dp">
+    <EditText android:textSize="?attr/font_173" android:textColorHint="#4e5f6f" android:id="@+id/task_title" android:background="@drawable/edit_text_bg_selector" android:layout_width="match_parent" android:layout_height="48dp" android:hint="@string/title" android:maxLines="1" android:inputType="textCapSentences" android:fontFamily="sans-serif-light" android:backgroundTint="#c0c0c0"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="37.3dp">
+        <TextView android:textSize="?attr/font_173" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="37.3dp" android:text="@string/priority" android:fontFamily="sans-serif-light" android:layout_marginEnd="19.3dp"/>
+        <RadioGroup android:orientation="horizontal" android:id="@+id/task_priority" android:layout_width="match_parent" android:layout_height="37.3dp">
+            <RadioButton android:id="@+id/task_priority_red" android:background="@android:color/transparent" android:layout_width="37.3dp" android:layout_height="37.3dp" android:button="@null" android:drawableStart="@drawable/radio_selector_red" android:layout_marginEnd="13.3dp"/>
+            <RadioButton android:id="@+id/task_priority_yellow" android:background="@android:color/transparent" android:layout_width="37.3dp" android:layout_height="37.3dp" android:checked="true" android:button="@null" android:drawableStart="@drawable/radio_selector_yellow" android:layout_marginEnd="13.3dp"/>
+            <RadioButton android:id="@+id/task_priority_green" android:background="@android:color/transparent" android:paddingTop="5dp" android:layout_width="37.3dp" android:layout_height="37.3dp" android:button="@null" android:drawableStart="@drawable/radio_selector_green"/>
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>
